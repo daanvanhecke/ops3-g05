@@ -13,3 +13,8 @@
 
 * Kanban-bord: <http://huboard.com/...>
 * Tijdregistratie: <http://toggl.com/...>
+
+## Begeleiders
+| Naam 		|Github gebruikersnaam	|
+| Bert Van Vreckem	| [bertvv](https://github.com/bertvv)|
+| Joeri Van Steen	| []
