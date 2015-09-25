@@ -1,14 +1,14 @@
 # Voortgangsrapport week nn
 
-* Groep:
+* Groep: 5
 * Datum:
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
-| student1 |       |           |
-| student2 |       |           |
-| student3 |       |           |
-| student4 |       |           |
+| Kjeld Antjon |       |           |
+| Matthias Derudder |       |           |
+| Frederik Van Brussel |       |           |
+| Daan Van Hecke |       |           |
 
 ## Wat heb je deze week gerealiseerd?
 
