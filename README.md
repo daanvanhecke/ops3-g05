@@ -5,7 +5,7 @@
 | Naam     | GitHub gebruikersnaam                   |
 | :---     | :---                                    |
 | Kjeld Antjon | [KjeldAntjon](https://github.com/KjeldAntjon) |
-| student2 | [student2](https://github.com/student2) |
+| Daan Van Hecke | [daanvanhecke](https://github.com/daanvanhecke) |
 | student3 | [student3](https://github.com/student3) |
 | student4 | [student4](https://github.com/student4) |
 
