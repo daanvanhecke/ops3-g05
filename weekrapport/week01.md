@@ -1,7 +1,7 @@
-# Voortgangsrapport week nn
+# Voortgangsrapport week 1
 
 * Groep: 5
-* Datum: 25/09/2015
+* Datum: 2/10/2015
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
@@ -23,7 +23,8 @@
 
 ### Student 1
 
-* ...
+* Algemene administratie: opzetten werkomgeving.
+* ![Tijdschema week 1 Kjeld](./screenshots/KjeldWeek1.png)
 
 [Afbeelding individueel rapport tijdregistratie]
 
