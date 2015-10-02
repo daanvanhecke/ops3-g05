@@ -30,4 +30,4 @@ Dit document kopieer je elke week naar `week01.md`, `week02.md`, enz. en vul je 
 
 ## Mappen deelopdrachten
 
-De deliverables van elke taak worden in een aparte directory bijgehouden `opdracht01`, `opdracht02`, enz. Vul ook telkens het lastenboek aan, daar is al een sjabloon voor voorzien. 
+ 
