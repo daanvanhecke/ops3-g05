@@ -21,10 +21,12 @@
 
 [Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
 
-### Student 1
+### Kjeld Antjon
 
 * Algemene administratie: opzetten werkomgeving.
-* ![Tijdschema week 1 Kjeld](./Screenshots/KjeldWeek1.png)
+* Windows Server: Online course Microsoft Powershell Jump Start 3.0: Chapter 1 t.e.m. 4
+
+![Tijdschema week 1 Kjeld](./Screenshots/KjeldWeek1.png)
 
 
 
@@ -49,7 +51,11 @@
 ## Wat plan je volgende week te doen?
 
 ### Algemeen
-### Student 1
+### Kjeld Antjon
+
+* De online course van Microsoft Powershell Jump Start 3.0 afwerken.
+* Beginnen met lezen boek Powershell.
+
 ### Student 2
 ### Student 3
 ### Student 4
