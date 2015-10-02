@@ -24,9 +24,9 @@
 ### Student 1
 
 * Algemene administratie: opzetten werkomgeving.
-* ![Tijdschema week 1 Kjeld](./screenshots/KjeldWeek1.png)
+* ![Tijdschema week 1 Kjeld](./Screenshots/KjeldWeek1.png)
 
-[Afbeelding individueel rapport tijdregistratie]
+
 
 ### Student 2
 
