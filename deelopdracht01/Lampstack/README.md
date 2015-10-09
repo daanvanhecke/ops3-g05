@@ -1,9 +1,8 @@
 # Demo/playground server with a LAMP stack
 
-aa
 This project sets up a development CentOS 7.1 server with a LAMP stack and Wordpress using Vagrant + Ansible. It is intended as a demo/playground machine and was set up for a introductory Linux workshop.
 
-This should work on Linux, MacOS X, Windows, etc.
+This should work on Linux, aMacOS X, Windows, etc.
 
 ## Dependencies
 
