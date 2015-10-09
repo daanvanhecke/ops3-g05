@@ -30,11 +30,13 @@
 
 
 
-### Student 2
+### Daan Van Hecke
 
-* ...
+* Windows Server: Online course Microsoft Powershell Jump Start 3.0
+* Lamp Stack installeren
+* Starten met testserver op te stellen
 
-[Afbeelding individueel rapport tijdregistratie]
+![Tijdschema week 1 Daan]()
 
 ### Student 3
 
