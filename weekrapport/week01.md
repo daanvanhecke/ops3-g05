@@ -46,9 +46,13 @@
 
 ![kjdjd](http://puu.sh/kDNeO/68749e9f35.png)
 
-### Student 4
+### Matthias Derudder
 
-* ...
+* Algemene administratie: opzetten werkomgeving.
+* Windows Server Virtual Academy: Powershell Jump Start 3.0
+
+![matt](http://i.imgur.com/vW5L9lC.jpg)
+
 
 [Afbeelding individueel rapport tijdregistratie]
 
