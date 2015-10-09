@@ -42,11 +42,11 @@
 
 ![aze](http://puu.sh/kDNrn/044c5bf1d3.png)
 
-### Student 4
+### Matthias Derudder 
 
-* ...
+* Windows Powershell boek: Windows PowerShell 3.0 Step by Step
 
-[Afbeelding individueel rapport tijdregistratie]
+![aze](http://i.imgur.com/lje3as4.jpg)
 
 ## Wat plan je volgende week te doen?
 
