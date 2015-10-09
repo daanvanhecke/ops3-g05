@@ -14,7 +14,7 @@
 
 ### Algemeen
 
-![huboard week 2](./screenshots/huboardWeek2.png)
+![huboard week 2](./Screenshots/huboardWeek2.png)
 
 * ...
 * ...
@@ -26,7 +26,7 @@
 * Windows powershell Jumpstart 3.0 course afgewerkt
 * Start Powershell boek: PS 3.0 First steps
 
-![kjeld week 2](./screenshots/KjeldWeek2.png)
+![kjeld week 2](./Screenshots/KjeldWeek2.png)
 
 ### Student 2
 
