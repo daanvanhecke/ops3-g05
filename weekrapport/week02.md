@@ -34,11 +34,13 @@
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 3
+### frederik van brussel
 
-* ...
+* Powershell filmpjes kijken
+* wordpress plugins zoeken
+* lampstack finetunen
 
-[Afbeelding individueel rapport tijdregistratie]
+![aze](http://puu.sh/kDNrn/044c5bf1d3.png)
 
 ### Student 4
 
