@@ -1,4 +1,4 @@
-# Voortgangsrapport week nn
+# Voortgangsrapport week 3
 
 * Groep: 5
 * Datum: 9/10/2015
@@ -15,11 +15,6 @@
 ### Algemeen
 
 ![huboard week 2](./Screenshots/HuboardWeek2.png)
-
-* ...
-* ...
-
-
 
 ### Kjeld Antjon
 
@@ -62,15 +57,6 @@
 * ...
 
 ## Feedback technisch luik
-
-### Algemeen
-
-### Student 1
-### Student 2
-### Student 3
-### Student 4
-
-## Feedback analyseluik
 
 ### Algemeen
 
