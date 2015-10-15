@@ -20,7 +20,7 @@ doorgenomen heeft.
 
 * `Kjeld Antjon`, `Matthias Derudder`, `Frederik Van Brussel`, `Daan Van Hecke`: Getting started with Powershell 3.0 Jump Start
 * `Kjeld Antjon`: Boekkeuze: Windows Powershell 3.0 First Steps - Ed Wilson
-* `Matthias Derudder`: Boekkeuze:
+* `Matthias Derudder`: Boekkeuze: Microsoft Windows Powershell 3.0 First Look - Adam Driscoll
 * `Frederik Van Brussel`: Boekkeuze: 
 * `Daan Van hecke`: Boekkeuze: 
 
@@ -37,7 +37,7 @@ doorgenomen heeft.
 | Kjeld Antjon |  25u       |              |
 | Matthias Derudder |         |              |
 | Frederik Van Brussel |         |              |
-| Daan Van Hecke |         |              |
+| Daan Van Hecke |  22u       |              |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
 
@@ -45,4 +45,5 @@ doorgenomen heeft.
 ###References
 
 * [Testplan](./testplan.md)
-* [Windows Powershell 3.0 First Steps - Ed Wilson](http://www.amazon.com/Windows-PowerShell-3-0-First-Steps/dp/0735681007) ISBN-13: 978-0735681002, ISBN-10: 0735681007
+* [Windows Powershell 3.0 First Steps - Ed Wilson](http://www.amazon.com/Windows-PowerShell-3-0-First-Steps/dp/0735681007) ISBN-13: 978-0735681002, ISBN-10: 0735681007Wi
+* [Windows Powershell 3.0 First Look - Adam Driscoll](http://www.amazon.com/Microsoft-Windows-PowerShell-3-0-Firstlook/dp/1849686440) ISBN-13: 978-1849686440, ISBN-10: 1849686440
