@@ -11,10 +11,11 @@
 
 ## Gebruikte tools
 
-* Kanban-bord: <http://huboard.com/...>
+* Kanban-bord: [https://huboard.com/HoGentTIN/ops3-g05](https://huboard.com/HoGentTIN/ops3-g05)
 * Tijdregistratie: <http://toggl.com/...>
 
 ## Begeleiders
 | Naam 		|Github gebruikersnaam	|
+|:---|:---|
 | Bert Van Vreckem	| [bertvv](https://github.com/bertvv)|
-| Joeri Van Steen	| []
+| Joeri Van Steen	| []|
