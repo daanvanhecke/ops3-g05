@@ -35,7 +35,7 @@ doorgenomen heeft.
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
 | Kjeld Antjon |  25u       |              |
-| Matthias Derudder |         |              |
+| Matthias Derudder |   35u   |              |
 | Frederik Van Brussel |         |              |
 | Daan Van Hecke |  22u       |              |
 
