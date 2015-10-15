@@ -1,4 +1,4 @@
-# Voortgangsrapport week 1
+# Voortgangsrapport week 2
 
 * Groep: 5
 * Datum: 2/10/2015
