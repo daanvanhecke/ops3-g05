@@ -5,9 +5,9 @@
 | Naam     | GitHub gebruikersnaam                   |
 | :---     | :---                                    |
 | Kjeld Antjon | [KjeldAntjon](https://github.com/KjeldAntjon) |
+| Matthias Derudder | [MatthiasDerudder](https://github.com/MatthiasDerudder) |
+| Frederik Van Brussel | [lilswif](https://github.com/lilswif) |
 | Daan Van Hecke | [daanvanhecke](https://github.com/daanvanhecke) |
-| student3 | [student3](https://github.com/student3) |
-| student4 | [student4](https://github.com/student4) |
 
 ## Gebruikte tools
 
@@ -18,4 +18,4 @@
 | Naam 		|Github gebruikersnaam	|
 |:---|:---|
 | Bert Van Vreckem	| [bertvv](https://github.com/bertvv)|
-| Joeri Van Steen	| []|
+| Joeri Van Steen	| |
