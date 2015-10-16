@@ -21,25 +21,25 @@
 
 [Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
 
-### Student 1
+### Kjeld Antjon
 
 * ...
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 2
+### Matthias Derudder
 
 * ...
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 3
+### Frederik Van Brussel
 
 * ...
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 4
+### Daan Van Hecke
 
 * ...
 
@@ -48,10 +48,10 @@
 ## Wat plan je volgende week te doen?
 
 ### Algemeen
-### Student 1
-### Student 2
-### Student 3
-### Student 4
+### Kjeld Antjon
+### Matthias Derudder
+### Frederik Van Brussel
+### Daan Van Hecke
 
 ## Waar hebben jullie nog problemen mee?
 
@@ -62,8 +62,8 @@
 
 ### Algemeen
 
-### Student 1
-### Student 2
-### Student 3
-### Student 4
+### Kjeld Antjon
+### Matthias Derudder
+### Frederik Van Brussel
+### Daan Van Hecke
 
