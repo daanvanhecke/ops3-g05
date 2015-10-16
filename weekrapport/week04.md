@@ -1,7 +1,7 @@
-# Voortgangsrapport week nn
+# Voortgangsrapport week 4
 
 * Groep: 5
-* Datum:
+* Datum: 16/10/2015
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
@@ -14,12 +14,12 @@
 
 ### Algemeen
 
-[Afbeelding huidige toestand Kanban-bord(en) invoegen]
+![Huboard week 4](./screenshots/huboardWeek4.png)
 
 * ...
 * ...
 
-[Afbeelding teamoverzicht tijdregistratie onderverdeeld per deelopdracht]
+
 
 ### Student 1
 
