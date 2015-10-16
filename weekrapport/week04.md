@@ -52,6 +52,8 @@
 
 ### Algemeen
 ### Kjeld Antjon
+* Boek Powershell: Afwerken tem hoofdstuk 8
+* Beginnen VM: Powershell Deployment
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
