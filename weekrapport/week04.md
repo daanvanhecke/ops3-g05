@@ -43,9 +43,10 @@
 
 ### Daan Van Hecke
 
-* ...
+* Testserver optimaliseren
+* Powershell microsoft virtual academy afwerken
 
-[Afbeelding individueel rapport tijdregistratie]
+![daan](http://puu.sh/kM602/3ed8dacdf8.png)
 
 ## Wat plan je volgende week te doen?
 
@@ -54,6 +55,8 @@
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
+* Werken met collectd om een server op te zetten met monitoring
+* Cheat sheet afwerken voor powershell.
 
 ## Waar hebben jullie nog problemen mee?
 

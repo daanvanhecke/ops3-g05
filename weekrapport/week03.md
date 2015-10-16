@@ -23,13 +23,13 @@
 
 ![kjeld week 2](./Screenshots/KjeldWeek2.png)
 
-### Student 2
+### Daan Van Hecke
 
-* ...
+* Lamp stack installeren
+* Beginnen met testserver voor LAMP.
+![daan week 2](http://puu.sh/kM5Hz/a4625656cd.png)
 
-[Afbeelding individueel rapport tijdregistratie]
-
-### frederik van brussel
+### Frederik Van Brussel
 
 * Powershell filmpjes kijken
 * wordpress plugins zoeken
@@ -46,10 +46,12 @@
 ## Wat plan je volgende week te doen?
 
 ### Algemeen
-### Student 1
-### Student 2
-### Student 3
-### Student 4
+### Kjeld Antjon
+### Daan Van Hecke
+- Lamp stack volledig afronden
+- Testserver optimaliseren
+### Matthias Derudder
+### Frederik Van Brussel
 
 ## Waar hebben jullie nog problemen mee?
 

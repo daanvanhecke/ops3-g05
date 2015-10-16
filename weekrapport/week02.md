@@ -36,7 +36,7 @@
 * Lamp Stack installeren
 * Starten met testserver op te stellen
 
-![Tijdschema week 1 Daan]()
+![daan](http://puu.sh/kM5oS/0322e3cee1.png)
 
 ### Frederik Van Brussel
 
@@ -65,6 +65,10 @@
 * Beginnen met lezen boek Powershell.
 
 ### Student 2
+### Daan Van Hecke
+* Linux Lamp installeren verder installeren.
+* Microsoft Windows server academy: powershell jump start 3.0.
+
 ### Student 3
 ### Student 4
 
