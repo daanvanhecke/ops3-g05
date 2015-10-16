@@ -21,25 +21,25 @@
 
 
 
-### Student 1
+### Kjeld Antjon
 
 * ...
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 2
+### Matthias Derudder
 
 * ...
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 3
+### Frederik Van Brussel
 
 * ...
 
 [Afbeelding individueel rapport tijdregistratie]
 
-### Student 4
+### Daan Van Hecke
 
 * ...
 
@@ -48,10 +48,10 @@
 ## Wat plan je volgende week te doen?
 
 ### Algemeen
-### Student 1
-### Student 2
-### Student 3
-### Student 4
+### Kjeld Antjon
+### Matthias Derudder
+### Frederik Van Brussel
+### Daan Van Hecke
 
 ## Waar hebben jullie nog problemen mee?
 
@@ -97,8 +97,8 @@ Linux-taak
     * Bv. Voordat je tests kan draaien op de Wordpress-server moet je eerst een of meerdere test-tools geselecteerd hebben, testscenario's beschreven hebben om uit te voeren, die automatiseren met de geselecteerde tools, procedure opzetten voor het uitvoeren (testplan!), voor het verzamelen en analyseren van resultaten, ...
 * Lastenboek en testplan opstellen!
 
-### Student 1
-### Student 2
-### Student 3
-### Student 4
+### Kjeld Antjon
+### Matthias Derudder
+### Frederik Van Brussel
+### Daan Van Hecke
 
