@@ -31,9 +31,9 @@
 
 ### Matthias Derudder
 
-* ...
+* Afwerken boek powershell
 
-[Afbeelding individueel rapport tijdregistratie]
+![matt](http://i.imgur.com/S5uLF31.jpg)
 
 ### Frederik Van Brussel
 
