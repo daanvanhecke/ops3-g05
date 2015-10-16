@@ -14,7 +14,7 @@
 
 ### Algemeen
 
-![Huboard week 4](./screenshots/huboardWeek4.png)
+![Huboard week 4](./Screenshots/huboardWeek4.png)
 
 * ...
 * ...
