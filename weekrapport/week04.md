@@ -23,9 +23,11 @@
 
 ### Kjeld Antjon
 
-* ...
+* Verder lezen/werken boek Powershell
+* Opzoekwerk Powershell deployment opdracht
+* Huboard aanvullen, testplan/lastenboek Powershell opdracht 1
 
-[Afbeelding individueel rapport tijdregistratie]
+![kjeld week4](./Screenshots/kjeldweek4.png)
 
 ### Matthias Derudder
 
