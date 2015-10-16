@@ -12,7 +12,7 @@
 ## Gebruikte tools
 
 * Kanban-bord: [https://huboard.com/HoGentTIN/ops3-g05](https://huboard.com/HoGentTIN/ops3-g05)
-* Tijdregistratie: <http://toggl.com/...>
+* Tijdregistratie: [Toggl groep 5](https://www.toggl.com/app/projects/829040/list/page/1)
 
 ## Begeleiders
 | Naam 		|Github gebruikersnaam	|
