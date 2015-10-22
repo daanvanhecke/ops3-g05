@@ -1,6 +1,6 @@
 # site.yml
 ---
-- hosts: lampstack
+- hosts: lamp
   sudo: true
   roles:
     - bertvv.el7
