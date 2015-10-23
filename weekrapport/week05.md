@@ -26,7 +26,7 @@
 * Starten documentatie WS deployment opdracht
 * Powershell boek: First Steps: Afwerken tem hoofdstuk 8
 
-![kjeld week4](./Screenshots/kjeldweek5.png)
+![kjeld week4](./Screenshots/kjeldWeek5.png)
 
 ### Matthias Derudder
 
