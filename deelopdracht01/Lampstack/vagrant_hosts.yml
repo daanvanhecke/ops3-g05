@@ -35,3 +35,5 @@
         :group: root
         :mount_options: ['dmode=0755', 'fmode=0644']
 
+- name: collectd
+  ip: 192.168.56.87

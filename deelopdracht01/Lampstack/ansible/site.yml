@@ -9,3 +9,30 @@
     - bertvv.mariadb
     - bertvv.wordpress
     - phpmyadmin
+    - { role: bertvv.collectd,
+             collectd_plugins:
+             [{ plugin: "cpu "},
+              { plugin: "logfile"},
+              { plugin: "memory" }],
+
+             collectd_plugins_multi:
+             {network: { Server: '192.168.56.87'}},
+
+            tags: ["collectd"] }
+# site.yml
+- hosts: collectd
+  sudo: true
+  roles:
+    - bertvv.el7
+    - { role: bertvv.collectd,
+             collectd_plugins:
+              [{ plugin: "logfile"}],
+
+             collectd_plugins_multi:
+             { rrdtool: { Datadir: '"/var/lib/collectd/rrd"' },
+               network: { Server: '192.168.56.87'}},
+
+            tags: ["collectd"] }
+
+
+
