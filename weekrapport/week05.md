@@ -30,9 +30,11 @@
 
 ### Matthias Derudder
 
-* ...
+* Documenteren Windows PowerShell
+* PowerShell boek: Step By Step uitgelezen
+* Microsoft Virtual Academy: Using PowerShell for Active Directory
 
-[Afbeelding individueel rapport tijdregistratie]
+![matthias](http://i.imgur.com/TXA1pBg.png)
 
 ### Frederik Van Brussel
 
