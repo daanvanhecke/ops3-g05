@@ -26,13 +26,15 @@
 * Starten documentatie WS deployment opdracht
 * Powershell boek: First Steps: Afwerken tem hoofdstuk 8
 
-![kjeld week4](./Screenshots/kjeldweek5.png)
+![kjeld week4](./Screenshots/kjeldWeek5.png)
 
 ### Matthias Derudder
 
-* ...
+* Documenteren Windows PowerShell
+* PowerShell boek: Step By Step uitgelezen
+* Microsoft Virtual Academy: Using PowerShell for Active Directory
 
-[Afbeelding individueel rapport tijdregistratie]
+![matthias](http://i.imgur.com/TXA1pBg.png)
 
 ### Frederik Van Brussel
 
@@ -42,9 +44,11 @@
 
 ### Daan Van Hecke
 
-* ...
+* Collectd afwerken.
+* Server opvullen met informatie.
+* Grafana installeren om collectd te visualiseren.
 
-[Afbeelding individueel rapport tijdregistratie]
+![daan](http://puu.sh/kUrHw/45fbac67ee.png)
 
 ## Wat plan je volgende week te doen?
 
@@ -56,6 +60,7 @@
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
+* De informatie visualiseren via Grafana.
 
 ## Waar hebben jullie nog problemen mee?
 
