@@ -44,9 +44,11 @@
 
 ### Daan Van Hecke
 
-* ...
+* Collectd afwerken.
+* Server opvullen met informatie.
+* Grafana installeren om collectd te visualiseren.
 
-[Afbeelding individueel rapport tijdregistratie]
+![daan](http://puu.sh/kUrHw/45fbac67ee.png)
 
 ## Wat plan je volgende week te doen?
 
@@ -58,6 +60,7 @@
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
+* De informatie visualiseren via Grafana.
 
 ## Waar hebben jullie nog problemen mee?
 
