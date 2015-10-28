@@ -24,6 +24,14 @@ doorgenomen heeft.
 * `Frederik Van Brussel`: Boekkeuze: 
 * `Daan Van hecke`: Boekkeuze: Microsoft Windows Powershell 3.0 First Look - Adam Driscoll 
 
+
+* Verwerken informatie: We maken een bestand waar we de opgenomen informatie combineren tot een groot geheel. We zullen hier efficient aan werken door de hoofdstukken te verdelen onder iedereen.
+Auteur per hoofdstuk:
+* Daan: 5. Remote Control en 7. Windows Server
+* Matthias: 3. S.O.S Powershell en 6. Scripts
+* Kjeld: 1. Introduction en 2. Using Powershell, tips and tricks
+* Frederik:  4. Getting in the pipeline en 7. Windows Server
+
 ### Kanban-bord
 
 * Kanban-bord: [https://huboard.com/HoGentTIN/ops3-g05](https://huboard.com/HoGentTIN/ops3-g05)
