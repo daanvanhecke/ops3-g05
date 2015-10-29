@@ -38,9 +38,11 @@
 
 ### Frederik Van Brussel
 
-* ...
+* Documenteren boek powershell
+* collectd opstellen 
 
-[Afbeelding individueel rapport tijdregistratie]
+
+[Afbeelding individueel rapport tijdregistratie](http://puu.sh/l1KGv/dfd53b7b70.png)
 
 ### Daan Van Hecke
 
