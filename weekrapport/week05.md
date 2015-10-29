@@ -42,7 +42,7 @@
 * collectd opstellen 
 
 
-[Afbeelding individueel rapport tijdregistratie](http://puu.sh/l1KGv/dfd53b7b70.png)
+![Afbeelding individueel rapport tijdregistratie](http://puu.sh/l1KGv/dfd53b7b70.png)
 
 ### Daan Van Hecke
 
