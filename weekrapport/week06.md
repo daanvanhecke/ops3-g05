@@ -18,9 +18,11 @@
 
 ### Kjeld Antjon
 
-* ...
+* Boek Powershell uitlezen (cheatssheets moeten nog afgewerkt worden)
+* Documentatie voor Core installatie + HS1&2 van boek 1
+* 
 
-[Afbeelding individueel rapport tijdregistratie]
+![SS kjeld week6](./Screenshots/togglweek6kjeld.png)
 
 ### Matthias Derudder
 
@@ -48,6 +50,9 @@
 
 ### Algemeen
 ### Kjeld Antjon
+
+* Ideaal zou zijn om al t.e.m. hoofdstuk 6 van boek 1 te zijn in server core installatie.
+* 
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
