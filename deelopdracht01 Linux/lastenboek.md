@@ -4,14 +4,6 @@
 * Verantwoordelijke testen: `Daan Van Hecke`
 
 ### Deliverables
-
-* Een performante webserver opzetten met high availability.
-	– HA: servers die wegvallen hebben geen invloed op beschikbaarheid voor de gebruikers
-	– performant: ook veel gebruikers kunnen tegelijkertijd de webserver gebruiken
-* Monitoren van netwerkservices, opvangen van metrieken.
-* Stress-testen van netwerkservices.
-* Reproduceerbare experimenten opzetten, resultaten correct analyseren en rapporteren.
-
 Geef een demo van de verschillende opstellingen, toon de resultaten van de analyse van de meetgegevens.
 *Github/Bitbucket repository met de code om de opstellingen te reconstrueren. Dit impliceert het gebruik van
 config management (Ansible). Gebruik waar mogelijk bestaande Ansible rollen (kijk bv. naar https://github.com/
@@ -23,8 +15,8 @@ bod komen.
 resultaten toelicht. De bedoeling is deze presentatie te geven op Config Management Camp 2016 (1-2 februari
 2016) voor een internationaal publiek
 
-### Deeltaken
-##Opstelling 1: eenvoudige lampstack
+## Deeltaken
+####Opstelling 1: eenvoudige lampstack
 * Eenvoudige LAMP stack opstellen met php-webapplicatie
 * Databank opvullen met artikels aan de hand van een back-end (Wordpress).
 * Server opzetten voor monitoring (collectd).
@@ -34,7 +26,7 @@ resultaten toelicht. De bedoeling is deze presentatie te geven op Config Managem
 * De serverload visualiseren via een dashboard.
 * De resultaten van de tests goed documenteren.
 
-##Opstelling 2: Multi-tier web-service
+####Opstelling 2: Multi-tier web-service
 * De webserversoftware vervangen door performantere software.
 * Nieuwe database op aparte machine.
 * Parallelle webservers en loadbalancer.
