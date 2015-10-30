@@ -18,12 +18,17 @@ kjeld: password voor machine: `Admin123`
 ###Hoofdstuk 2: Beheren van standalone servers
 1. Time zone aanpassen: Om huidige te vinden `[System.TimeZone]::CurrentTimeZone`
 2. Je kan een hulp methode aanmaken voor de tijdzone te vinden van plekken:
-3. `function Get-TimeZone($Name)
-{
- [system.timezoneinfo]::GetSystemTimeZones() | 
- Where-Object { $_.ID -like "*$Name*" -or $_.DisplayName -like "*$Name*" } | 
- Select-Object -ExpandProperty ID
-}`
+3. `function Get-TimeZone($Name)`
+
+`{`
+
+ `[system.timezoneinfo]::GetSystemTimeZones() | `
+ 
+ `Where-Object { $_.ID -like "*$Name*" -or $_.DisplayName -like "*$Name*" } | `
+ 
+ `Select-Object -ExpandProperty ID`
+ 
+`}`
 4. Nu kan je `get-timezone -Name X` gebruiken. In X plaats je de naam van een stad en krijg je in welke tijdzone deze zit.
 5. Brussel zit in de Romance time zone. Staat normaal al goed.
 6. Tijd en datum: Om te controleren: `get-date`
