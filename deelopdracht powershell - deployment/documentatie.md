@@ -53,6 +53,9 @@ kjeld: password voor machine: `Admin123`
 2. Je moet **Active Directory Domain Services** installeren.
 3. `install-windowsfeature ad-domain-services`
 4. Script om PFSV1 DC te maken [hier](http://www.mustbegeek.com/install-domain-controller-in-server-2012-using-windows-powershell/). Het script staat onderaan de pagina. Pas wel de domainname en domainNetBiosName aan.
+ 
+######Practicum 3.2.1
+
 
 ###References
 * [Installating AD on WS core](http://blog.coretech.dk/kaj/installing-active-directory-domain-services-on-windows-server-2012-r2-core/)
