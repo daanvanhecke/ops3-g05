@@ -1,7 +1,7 @@
-# Voortgangsrapport week nn
+# Voortgangsrapport week 6
 
 * Groep: 5
-* Datum:
+* Datum: 30/10/2015
 
 | Student  | Aanw. | Opmerking |
 | :---     | :---  | :---      |
