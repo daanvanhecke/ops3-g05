@@ -18,12 +18,18 @@ kjeld: password voor machine: `Admin123`
 ###Hoofdstuk 2: Beheren van standalone servers
 1. Time zone aanpassen: Om huidige te vinden `[System.TimeZone]::CurrentTimeZone`
 2. Je kan een hulp methode aanmaken voor de tijdzone te vinden van plekken:
-3. `function Get-TimeZone($Name)
-{
- [system.timezoneinfo]::GetSystemTimeZones() | 
- Where-Object { $_.ID -like "*$Name*" -or $_.DisplayName -like "*$Name*" } | 
- Select-Object -ExpandProperty ID
-}`
+3. `function Get-TimeZone($Name)`
+
+`{`
+
+ `[system.timezoneinfo]::GetSystemTimeZones() | `
+ 
+ `Where-Object { $_.ID -like "*$Name*" -or $_.DisplayName -like "*$Name*" } | `
+ 
+ `Select-Object -ExpandProperty ID`
+ 
+`}`
+
 4. Nu kan je `get-timezone -Name X` gebruiken. In X plaats je de naam van een stad en krijg je in welke tijdzone deze zit.
 5. Brussel zit in de Romance time zone. Staat normaal al goed.
 6. Tijd en datum: Om te controleren: `get-date`
@@ -45,12 +51,18 @@ kjeld: password voor machine: `Admin123`
 ###Hoofdstuk 3: Active Directory
 1. Om te zien welke services geïnstalleerd zijn: `get-windowsfeature`
 2. Je moet **Active Directory Domain Services** installeren.
+3. `install-windowsfeature ad-domain-services`
+4. Script om PFSV1 DC te maken [hier](http://www.mustbegeek.com/install-domain-controller-in-server-2012-using-windows-powershell/). Het script staat onderaan de pagina. Pas wel de domainname en domainNetBiosName aan.
+ 
+######Practicum 3.2.1
+
 
 ###References
 * [Installating AD on WS core](http://blog.coretech.dk/kaj/installing-active-directory-domain-services-on-windows-server-2012-r2-core/)
 * [Help functie timezone](http://powershell.com/cs/blogs/tips/archive/2013/08/13/changing-current-time-zone.aspx)
 * [Turn off ipv6 and ipv4 in WS 2012 core](https://social.technet.microsoft.com/Forums/en-US/a1bd0436-7f99-43c6-ac55-26e14ba8fb9e/how-disable-ipv6-and-ipv4-in-server-2012-core-by-using-powershell?forum=winserverpowershell)
 * [hulpscript workgroup](http://powershell.com/cs/media/p/3939.aspx)
+* [Installatie AD DS en promotion naar DC](https://www.brandonlawson.com/active-directory/installing-a-2012-domain-controller-with-powershell/)
 
 
 
