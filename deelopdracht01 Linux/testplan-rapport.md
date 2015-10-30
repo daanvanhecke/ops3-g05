@@ -5,9 +5,18 @@
 
 ### Testplan
 
-Auteur(s) testplan: Daan Van Hecke
+Auteur(s) testplan: 'Daan Van Hecke'
+Testolan opzetten voor:
+_Wordpress werkt
+_collectd server werk( surven naar serverip/collectd/)
+_framework voor load testers werken op lampstack
+_collectd web ontvangt metrieken van de lampstack
 
-- Pingen naar de LAMP webserver.
+
+
+
+
+- Pingen naar de LAMP webserver. + 
 - Kunnen surfen naar de LAMP webserver.
 - Surfen naar IP-addres LAMP server /collectd.
 - Surfen naar de wordpress op de LAMP stack.
@@ -25,7 +34,7 @@ Auteur(s) testplan: Daan Van Hecke
 
 ### Testrapport
 
-Uitvoerder(s) test: Frederik Van Brussel
+Uitvoerder(s) test: 'Frederik Van Brussel'
 
 - De LAMP-webserver opstellen is gelukt via Ansible role.
 - Wordpress is opgevuld met data.

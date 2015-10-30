@@ -16,15 +16,16 @@ resultaten toelicht. De bedoeling is deze presentatie te geven op Config Managem
 2016) voor een internationaal publiek
 
 ## Deeltaken
-####Opstelling 1: eenvoudige lampstack
-* Eenvoudige LAMP stack opstellen met php-webapplicatie
-* Databank opvullen met artikels aan de hand van een back-end (Wordpress).
-* Server opzetten voor monitoring (collectd).
-* Verschillende metrieken (Cpu load, netwerk/disk-IO, geheugen en schijfgebruik, ... ) capteren van op de webserver.
-* Framework voor loadtesting opzetten (Apache JMeter).
-* Testen voor veel load of weinig load.
-* De serverload visualiseren via een dashboard.
-* De resultaten van de tests goed documenteren.
+####Opstelling 1: Eenvoudige lampstack
+* Automatisatie: eenvoudige LAMP stack opstellen met PHP-webapplicatie.
+* Automatisatie: databank opvullen met artikels aan de hand van een back-end (Wordpress).
+* Automatisatie: Server opzetten voor monitoring (collectd + collectd-web).
+* Verscheidene frameworks voor loadtesting opzetten.
+* Testschema's opstellen en uitvoeren.
+* Servers aanpassen: cache, loadbalancer, ...
+* Testen runnen op vaste computer.
+* Testrapport opstellen.
+* De resultaten van de tests goed documenteren + conclusies.
 
 ####Opstelling 2: Multi-tier web-service
 * De webserversoftware vervangen door performantere software.
@@ -41,9 +42,9 @@ resultaten toelicht. De bedoeling is deze presentatie te geven op Config Managem
 
 | Student  | Geschat | Gerealiseerd |
 | :---     |    ---: |         ---: |
-| student1 |         |              |
-| student2 |         |              |
-| student3 |         |              |
-| student4 |         |              |
+| Daan Van Hecke |     50    |              |
+| Frederik Van Brussel |         |              |
+| Kjeld Antjon |         |              |
+| Matthias De Rudder |         |              |
 
 (na oplevering van de taak een schermafbeelding toevoegen van rapport tijdbesteding voor deze taak)
