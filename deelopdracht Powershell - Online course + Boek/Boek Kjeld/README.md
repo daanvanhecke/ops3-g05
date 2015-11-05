@@ -62,6 +62,53 @@ All powershell CMDlets were made using the same format: *verb-noun*
 ||*SilentlyContinue*|Suppresses the error message and continues executing the command
 ||*Stop*|Displays the error message and stops executing the command
 
+###Formatting output
+
+When you use *get-process* you get a list which contains 8 different properties. There are however many more which aren't shown. Using *format-table* you can show the information that you require.
+
+All of these commands, obviously, are used with the pipeline.
+
+######formatting a table
+
+Input: *Get-Process | Format-Table -Property name, handles, vm, ws*
+
+Output:this returns the list of the processes with the specified properties.
+
+If you'ld like a list of all available properties, etc. use *get-member*
+
+Parameter: *-AutoSize*
+
+Output: To fix the output, you need to add the -AutoSize parameter to the
+end of the Format-Table command. The -Autosize parameter causes Format-Table to wait until
+all data is available, and then the space between columns reduces to fit the actual size of the
+data contained in the columns.
+
+Parameter: *-Wrap*
+
+Output: To display the overly long display names, use the -Wrap parameter in addition to using the
+-AutoSize parameter.
+
+######Creating a list
+
+When you want to see all the properties and associated values returned by a particular command,
+using *Format-List* is the easy way to display the information.
+
+Input: *Get-EventLog application -N 5 | Fl s*,e**
+
+Output: this command uses the abbreviated version of many parameters and CMDlets. However, it is quite straight forward. Of the 5 newest application logs, a list is made of all properties starting with s or e.
+
+![hs4p1](./ss/hs4p1.png)
+
+######creating a wide display
+
+If your only interested in showing 1 property you can use the *format-wide* CMDlet.
+
+This will show all properties in a 2-column list.
+
+Input: *Get-Process | Format-Wide -Property name*
+
+![hs4p2.png](./ss/hs4p2.png)
+
 ###Info Script execution policy
 By default, Windows PowerShell disallows the execution of scripts. Typically, Group Policy
 controls script support. If it does not, and if you have administrator rights on your computer,
