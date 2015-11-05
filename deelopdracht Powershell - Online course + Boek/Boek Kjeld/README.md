@@ -109,6 +109,31 @@ Input: *Get-Process | Format-Wide -Property name*
 
 ![hs4p2.png](./ss/hs4p2.png)
 
+######Create an interactive grid
+
+Input: *gps | Out-GridView*
+
+###Storing Output
+
+######Store in text file
+
+Storing an output to a text file is very simple
+
+Input: *CMDlet >>path*
+
+If you use the same commands afterwards it will append the information to the file. If you'ld simple like to overwrite the file simply use *>* instead of *>>*
+
+######Storing to .csv file
+
+After a plain text file, the next level of complexity is a Comma Separated Value (.csv) file. Actually,
+by using the Export-CSV cmdlet, creating a .csv file is not very complicated.
+
+The most important thing to remember when creating a .csv file is that if you want to open it
+in Microsoft Excel or import it to SQL or some other application, use the -NoTypeInformation
+switched parameter to avoid writing a line of type information to the top of the file. The following example shows this technique of avoiding type information by using the NoTypeInformation
+switch when collecting process information:
+Input: *Get-Process | Export-Csv -Path c:\fso\process.csv -NoTypeInformation*
+
 ###Info Script execution policy
 By default, Windows PowerShell disallows the execution of scripts. Typically, Group Policy
 controls script support. If it does not, and if you have administrator rights on your computer,
