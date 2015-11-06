@@ -55,6 +55,7 @@
 ### Algemeen
 ### Kjeld Antjon
 - Boek 1 voor windows core deployment proberen afwerken
+
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
