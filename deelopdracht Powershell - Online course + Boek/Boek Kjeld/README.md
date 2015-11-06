@@ -1,4 +1,4 @@
-	#Basic commands windows Powershell
+#Basic commands windows Powershell
 -----------------------------------
 Keep in mind, many Unix and DOS commands also work. These are the Powershell specific commands.
 The unix and DOS commands simply point to powershell commands.
@@ -235,7 +235,7 @@ commands.
 
 ######Special commands
 
-![special commands](./Screenshots/tablespeccomm.png)
+![special commands](./ss/tablespeccomm.png)
 
 ###Powershell profiles
 The reason to learn about setting the Windows PowerShell script execution policy, as discussed
