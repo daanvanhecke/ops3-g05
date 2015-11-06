@@ -46,7 +46,7 @@
 * Apache JMeter documentatie schrijven
 * Visualiseren van data met APache JMeter.
 
-[Week 7](http://puu.sh/lbih7/7693e8371f.png)
+![Week 7](http://puu.sh/lbih7/7693e8371f.png)
 
 ## Wat plan je volgende week te doen?
 
