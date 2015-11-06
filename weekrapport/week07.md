@@ -42,9 +42,11 @@
 
 ### Daan Van Hecke
 
-* ...
+* Testrapport en testplannen opstellen
+* Apache JMeter documentatie schrijven
+* Visualiseren van data met APache JMeter.
 
-[Afbeelding individueel rapport tijdregistratie]
+[Week 7](http://puu.sh/lbih7/7693e8371f.png)
 
 ## Wat plan je volgende week te doen?
 
@@ -53,6 +55,7 @@
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
+- Alle testen geschreven te hebben voor Apache JMeter.
 
 ## Waar hebben jullie nog problemen mee?
 
