@@ -134,6 +134,42 @@ switched parameter to avoid writing a line of type information to the top of the
 switch when collecting process information:
 Input: *Get-Process | Export-Csv -Path c:\fso\process.csv -NoTypeInformation*
 
+###Remoting
+
+Windows Server 2012 installs with Windows Remote Management (WinRm) configured and
+running to support remote Windows PowerShell commands. WinRm is the Microsoft implementation
+of the industry standard WS-Management Protocol. As such, WinRM provides a
+firewall-friendly method of accessing remote systems in an interoperable manner. It is the
+remoting mechanism used by the new Common Information Model (CIM) cmdlets (the CIM
+cmdlets are covered in Chapter 9, "Using CIM"). As soon as Windows Server 2012 is up and
+running, you can make a remote connection and run commands or open an interactive Windows
+PowerShell console. A Windows 8 client, on the other hand, ships with WinRm locked
+down. Therefore, the first step is to use the Enable-PSRemoting function to configure remoting.
+When running the *Enable-PSRemoting* function, the following steps occur:
+1. Starts or restarts the WinRM service.
+2. Sets the WInRM service startup type to Automatic.
+3. Creates a listener to accept requests from any Internet Protocol (IP) address.
+4. Enables inbound firewall exceptions for WS_Management traffic.
+5. Sets a target listener named Microsoft.powershell.
+6. Sets a target listener named Microsoft.powershell.workflow.
+7. Sets a target listener named Microsoft.powershell32.
+During each step of this process, the function prompts you to agree or not agree to
+performing the specified action. If you are familiar with the steps the function performs, and
+you do not make any changes from the defaults, you can run the command with the Force
+switched parameter and it will not prompt prior to making the changes. The following example
+shows the syntax of this command:
+
+Input: *Enable-PSRemoting -Force*
+
+Once configured, use the Test-WSMan cmdlet to ensure the WinRM remoting is properly
+configured and is accepting requests. A properly configured system replies with the following
+data:
+
+Input:*PS C:\> Test-WSMan -ComputerName w8c504*
+
+Output: 
+![hs7p1](./ss/hs6p1.png)
+
 ###Info Script execution policy
 By default, Windows PowerShell disallows the execution of scripts. Typically, Group Policy
 controls script support. If it does not, and if you have administrator rights on your computer,
