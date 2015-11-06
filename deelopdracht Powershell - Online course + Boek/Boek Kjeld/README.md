@@ -1,4 +1,4 @@
-#Basic commands windows Powershell
+	#Basic commands windows Powershell
 -----------------------------------
 Keep in mind, many Unix and DOS commands also work. These are the Powershell specific commands.
 The unix and DOS commands simply point to powershell commands.
@@ -55,7 +55,7 @@ All powershell CMDlets were made using the same format: *verb-noun*
 |**Task**|**Parameter**|**Notes**
 |---|---|---|
 |obtain additional information about the action a cmdlet performs|*-Verbose*
-|Determines how the cmdlet responds to a non-terminating error from the command|*-ErrorAction|Requires an additional **string** to signify how it wants to deal with the error|
+|Determines how the cmdlet responds to a non-terminating error from the command|*-ErrorAction*|Requires an additional **string** to signify how it wants to deal with the error|
 ||*Continue*|Displays the error message and continues executing the command. The default option|
 ||*Ignore*|Suppresses the error message and continues executing the command
 ||*Inquire*|Displays the error message and prompts you for confirmation before continuing execution
@@ -170,7 +170,12 @@ data:
 Input:*PS C:\> Test-WSMan -ComputerName w8c504*
 
 Output: 
+
 ![hs7p1](./ss/hs6p1.png)
+
+######Running commands
+
+
 
 ###Info Script execution policy
 By default, Windows PowerShell disallows the execution of scripts. Typically, Group Policy
