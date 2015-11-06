@@ -30,10 +30,11 @@
 
 ### Matthias Derudder
 
-* ...
+* MVA: Powershell for Active Directory afwerken
+* Powershell deployment: H4-8
+* MVA: PowerShell scripting
 
-[Afbeelding individueel rapport tijdregistratie]
-
+![week7](http://i.imgur.com/NuK9oLv.png)
 ### Frederik Van Brussel
 
 * ...
