@@ -237,6 +237,10 @@ commands.
 
 ![special commands](./ss/tablespeccomm.png)
 
+######Comparison operators
+
+![comp operators](./ss/compareoper.png)
+
 ###Powershell profiles
 The reason to learn about setting the Windows PowerShell script execution policy, as discussed
 in the preceding section, is that a Windows PowerShell profile is a script. In fact, it is
