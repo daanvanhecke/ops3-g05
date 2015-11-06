@@ -14,7 +14,14 @@ legende siege log: nano /usr/local/var/siege.log <br\>
 |  Transactions | Elapsed Time  | Data Transferred | Response Time | Concurrency | Succesful Transactions | Failed Transactions    |
 | ------------- |:-------------:| ----------------:| ------------- |:-----------:| ----------------------:| ----------------------:|
 
+overeenkomstige Jmeter log:
 
+|  #Samples | Elapsed Time  | Bytes | Response Time | Concurrency | Succesful Transactions | Failed Transactions    |
+| ------------- |:-------------:| ----------------:| ------------- |:-----------:| ----------------------:| ----------------------:|
+
+
+=> De tabel concurrency kunnen we eventueel laten vallen.
+DOEL: Zowel siege als jmeter leveren een gelijkaardige CSV-file op. Op basis van dit maken we grafieken, gemiddelden,... .
 
 pages under siege: ...
 
