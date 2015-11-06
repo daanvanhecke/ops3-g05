@@ -18,4 +18,4 @@
 | Naam 		|Github gebruikersnaam	|
 |:---|:---|
 | Bert Van Vreckem	| [bertvv](https://github.com/bertvv)|
-| Joeri Van Steen	| |
+| Joeri Van Steen	| [rappitbe](https://github.com/rappitbe)|

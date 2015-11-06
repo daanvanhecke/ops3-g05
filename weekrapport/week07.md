@@ -24,7 +24,8 @@
 
 ### Kjeld Antjon
 
-* ...
+* scripten en samenvatting boek afwerken
+* Powershell deployment AD
 
 ![week7](./Screenshots/togglweek7kjeld.png)
 
@@ -55,6 +56,8 @@
 
 ### Algemeen
 ### Kjeld Antjon
+- Boek 1 voor windows core deployment proberen afwerken
+
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
