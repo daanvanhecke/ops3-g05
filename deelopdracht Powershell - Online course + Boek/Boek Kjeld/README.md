@@ -241,6 +241,36 @@ commands.
 
 ![comp operators](./ss/compareoper.png)
 
+###Working with functions
+
+In Windows PowerShell, functions have moved to the forefront as the primary programming
+element used when writing Windows PowerShell scripts. This is not necessarily due to improvements in functions per se, but rather a combination of factors including the maturity
+of Windows PowerShell scriptwriters.
+
+To create a function, you begin with the Function keyword followed by the name of the
+function. As a best practice, use the Windows PowerShell verb and noun combination when
+you create functions.
+
+*Function Function-Name*
+
+*{*
+
+*#insert your code here*
+
+*}*
+
+or with multiple parameters
+
+![h12 2](./ss/h12p2.png)
+######Using types
+
+When accepting parameters for a function, it might be important to use a type constraint to
+ensure the function receives the correct type of data. To do this, place the desired type alias
+inside square brackets in front of the input parameter. This will constrain the data type and
+prevent the entry of an incorrect type of data.
+
+![hs12 1](./ss/hs12p1.png)
+
 ###Powershell profiles
 The reason to learn about setting the Windows PowerShell script execution policy, as discussed
 in the preceding section, is that a Windows PowerShell profile is a script. In fact, it is
