@@ -37,9 +37,11 @@
 ![week7](http://i.imgur.com/NuK9oLv.png)
 ### Frederik Van Brussel
 
-* ...
+* Testtemplates/strategie opstellen
+* Siege scripts opstellen
 
-[Afbeelding individueel rapport tijdregistratie]
+
+![Afbeelding individueel rapport tijdregistratie](http://puu.sh/lbkRE/0cb97da282.png)
 
 ### Daan Van Hecke
 

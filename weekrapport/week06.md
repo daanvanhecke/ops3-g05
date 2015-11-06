@@ -36,9 +36,14 @@
 
 ### Frederik Van Brussel
 
-* ...
+![fred](http://puu.sh/lbkqa/29a8fa8f1a.png)
 
 [Afbeelding individueel rapport tijdregistratie]
+
+- collectd afwerken
+- documentatie
+- docs siege lezen
+
 
 ### Daan Van Hecke
 * Server opvullen met informatie.
