@@ -146,6 +146,7 @@ running, you can make a remote connection and run commands or open an interactiv
 PowerShell console. A Windows 8 client, on the other hand, ships with WinRm locked
 down. Therefore, the first step is to use the Enable-PSRemoting function to configure remoting.
 When running the *Enable-PSRemoting* function, the following steps occur:
+
 1. Starts or restarts the WinRM service.
 2. Sets the WInRM service startup type to Automatic.
 3. Creates a listener to accept requests from any Internet Protocol (IP) address.
@@ -153,6 +154,7 @@ When running the *Enable-PSRemoting* function, the following steps occur:
 5. Sets a target listener named Microsoft.powershell.
 6. Sets a target listener named Microsoft.powershell.workflow.
 7. Sets a target listener named Microsoft.powershell32.
+8. 
 During each step of this process, the function prompts you to agree or not agree to
 performing the specified action. If you are familiar with the steps the function performs, and
 you do not make any changes from the defaults, you can run the command with the Force
