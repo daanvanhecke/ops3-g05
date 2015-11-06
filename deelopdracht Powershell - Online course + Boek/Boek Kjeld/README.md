@@ -175,6 +175,29 @@ Output:
 
 ######Running commands
 
+For simple configuration on a single remote machine, entering a remote Windows PowerShell
+session is the answer. To enter a remote Windows PowerShell session, use the Enter-PSSession
+cmdlet to create an interactive remote Windows PowerShell session on a target machine. If
+you do not supply credentials, the remote session impersonates your current logon. The output
+in the following example illustrates connecting to a remote computer named dc1:
+
+Input: *PS C:\> Enter-PSSession -ComputerName dc1*
+
+When you have a single command to run, it does not make sense to go through all the
+trouble of building and entering an interactive, remote Windows PowerShell session. Instead
+of creating a remote Windows PowerShell console session, you can run a single command by
+using the Invoke-Command cmdlet. If you have a single command to run, use the cmdlet directly
+and specify the computer name as well as any credentials required for the connection.
+The following example shows this technique, with the last process running on the ex1 remote
+server:
+
+Input: *PS C:\> Invoke-Command -ComputerName ex1 -ScriptBlock {gps | select -Last 1}*
+
+Use of the Invoke-Command exposes one of the more powerful aspects of Windows
+PowerShell remoting, which is running the same command against a large number of remote
+systems.
+
+![hs7 2](./ss/hs7p1.png)
 
 
 ###Info Script execution policy
@@ -201,15 +224,18 @@ In addition to six levels of execution policy, there are three different scopes 
 * CurrentUser The execution policy affects only the current user.
 * LocalMachine The execution policy affects all users of the computer.
 
-######Summarized
-|**Task**|**Command**|**Notes**
-|---|---|---|
-|Changes the user preference for the Windows PowerShell execution policy|*set-executionPolicy*||
-||*-Scope*|
-||*-ExecutionPolicy|
+###Scripting
 
-To set the LocalMachine execution policy, you must have administrator rights on the local
-computer.
+Microsoft Powershell 3.0 First Steps is a very basic introduction to Powershell, made for users with no prior knowledge of the software. Therefore the book contains very little actual scripts. Only after Chapter 11, **Using Windows Powershell Scripts**, are scripts introduced. 
+
+All scripts can be found under the folder *scripts*.
+
+In its most basic form, a Windows PowerShell script is a collection of Windows PowerShell
+commands.
+
+######Special commands
+
+![special commands](./Screenshots/tablespeccomm.png)
 
 ###Powershell profiles
 The reason to learn about setting the Windows PowerShell script execution policy, as discussed
