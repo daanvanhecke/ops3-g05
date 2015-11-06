@@ -6,6 +6,16 @@
 
 The -d NUM option sets a random interval between 0 and NUM that each "user" will sleep for between requests. While the -c NUM option sets the concurrent number of simulated users.
 
+
+open siege log : ```nano  ```
+
+legende siege log: nano /usr/local/var/siege.log <br\>
+
+|  Transactions | Elapsed Time  | Data Transferred | Response Time | Concurrency | Succesful Transactions | Failed Transactions    |
+| ------------- |:-------------:| ----------------:| ------------- |:-----------:| ----------------------:| ----------------------:|
+
+
+
 pages under siege: ...
 
 ### siege -c5 -d10 -t5M
