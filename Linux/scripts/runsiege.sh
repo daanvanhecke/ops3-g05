@@ -5,99 +5,114 @@ function echocolor() { # $1 = string
     printf "${COLOR}$1${NC}\n"
 }
 
-
-echocolor "**********************"
-echocolor "**  SIEGE TEST RUN  **"
-echocolor "**********************"
-echocolor "**********************"
+echocolor "**************************************************************************"
+echocolor "**                     SIEGE GRAPH GENERATOR                            **"
+echocolor "**************************************************************************"
 echo 
-echocolor "how many times would you like to run a test: "
+echo 
+echocolor "**************************************************************************"
+echocolor "**                          INITIALISATION                              **"
+echocolor "**************************************************************************"
+echo
+echocolor "on wich numbers of concurring users you want to test (seperate with a space): "
+read -a arr
+echo 
+echocolor "how many times would you like to run a single test (for each number of conurring users): "
 read AANTALXTEST
-echocolor "How long you want the test to run? (format: Number + S/M/H/D)"
+echo
+echocolor "How long you want a single test to run? (format: Number + S/M/H/D)"
 read Twaarde
+echo
 echocolor "Delay-value?: "
 read Dwaarde
-echocolor "How many concurring Users?"
-read Cwaarde
-echocolor "Name of the logfile"
+echo
+echocolor "Name of the CSV-ouputfile"
 read lognaam
-echocolor "Clear originial logfile after test? (y / n)"
-read clear
+echo
+echocolor "**************************************************************************"
+echocolor "**                          CHECK TO CONTINUE                           **"
+echocolor "**************************************************************************"
 echo 
+echocolor "check site for following concurring users:"
+for a in ${arr[@]}
+do 
+  echo -n $a " "
+done
 echo
-echocolor "***********************"
-echocolor "** PREPARING ENGAGE  **"
-echocolor "***********************"
 echo
-echo gonna run:
-echo siege -c$Cwaarde -d$Dwaarde -t$Twaarde
-echo x $AANTALXTEST "times"
+echocolor "Time for a single test = " 
+echo -n $Twaarde
 echo
-echocolor "***********************"
-echocolor "**      ENGAGING     **"
-echocolor "***********************"
+echocolor "Delay Time = " 
+echo -n $Dwaarde
+echo
+echo
+echocolor "continue? (type y / n)"
+read checkers
+if [ $checkers = "n" ]; then     
+        exit    
+fi
+
+echo 
+echocolor "**************************************************************************"
+echocolor "**             TIME TO ENGAGE, LAY BACK, WATCH, RELAX!                  **"
+echocolor "**************************************************************************"
+echo
+for b in ${arr[@]}
+do 
+echo 
+echocolor "**************************************************************************"
+echocolor "**        STARTING "$AANTALXTEST" ATTACKS WITH "$b" USERS               **"
+echocolor "**************************************************************************"
+echo 	
 
 COUNTER=0
 while [  $COUNTER -lt $AANTALXTEST ]; do
-siege -c $Cwaarde -d $Dwaarde -t $Twaarde
+siege -c $b -d $Dwaarde -t $Twaarde
 let COUNTER=COUNTER+1 
- done
-echo 
-echo
-echocolor "***********************"
-echocolor "**   DONE ATTACKING  **"
-echocolor "***********************"
-echo
-echo
-echocolor "***********************"
-echocolor "**MAKING CSV IN HOME **"
-echocolor "***********************"
-echo
-echo Gonna run:
-echo cp -r /usr/local/var/siege.log /home/fred/SiegeCSV/$lognaam.CSV
-cp -r /usr/local/var/siege.log /home/fred/SiegeCSV/$lognaam.CSV
-echo
-echo
-            if [ $clear = "y" ]; then
-            	echo
-				echocolor "***********************"
-				echocolor "**Clearing log file  **"
-				echocolor "***********************"
-				echo
-            	sudo bash -c 'echo "" > /usr/local/var/siege.log'
-            else
-                           	echo
-				echocolor "*****************************"
-				echocolor "**  NOT Clearing log file  **"
-				echocolor "*****************************"
-				echo
-            fi
+done
 
-echocolor "****************************"
-echocolor "**  Making Averages table **"
-echocolor "****************************"
-echo
-echo Gonna run:
-echo awk '{ total += $2; count++ } END { print total/count }' /home/fred/SiegeCSV/$lognaam.CSV
+echo 
+echocolor "**************************************************************************"
+echocolor "**               ATTACKS FINISHED: MAKING TABLE ROW                     **"
+echocolor "**************************************************************************"
+echo 	
+cp -r /usr/local/var/siege.log /home/fred/SiegeCSV/$lognaam.CSV
+sudo bash -c 'echo "" > /usr/local/var/siege.log'
 
 COUNTER=2
 while [  $COUNTER -lt 11 ]; do
 	
 	if [ $COUNTER = 2 ]; then
-			sudo bash -c 'echo -n "<td>" > /home/fred/SiegeCSV/'$lognaam'-averages.txt'
- 			VAR=`awk '{ total += $2; count++ } END { print total/count }' /home/fred/SiegeCSV/$lognaam.CSV`
- 			sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-averages.txt'
-			sudo bash -c 'echo -n "</td>" >> /home/fred/SiegeCSV/'$lognaam'-averages.txt'
+			sudo bash -c 'echo -n "<td>" > /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+ 			VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
+ 			sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+			sudo bash -c 'echo -n "</td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
     else
-    		sudo bash -c 'echo -n "<td>" >> /home/fred/SiegeCSV/'$lognaam'-averages.txt'
-    		VAR=`awk '{ total += $'$COUNTER'; count++ } END { print total/count }' /home/fred/SiegeCSV/$lognaam.CSV`
-    		sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-averages.txt'
-			sudo bash -c 'echo -n "</td>" >> /home/fred/SiegeCSV/'$lognaam'-averages.txt'
+    		sudo bash -c 'echo -n "<td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
+    		sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+			sudo bash -c 'echo -n "</td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
     fi
-
 let COUNTER=COUNTER+1 
  done
+done
 
-echocolor "***********************"
-echocolor "**    DONE, HOORAY!  **"
-echocolor "***********************"
+#Transactions | Elapsed Time  | Data Transferred | Response Time | Concurrency | Succesful Transactions | Failed Transactions 
+echo "<table><tr><th> #Transactions </th><th> Elapsed Time </th><th> Data Transferred </th><th> Response Time </th><th> Concurrency </th><th> Succesful Transactions </th><th> Failed Transactions </th></tr>" > /home/fred/testtabel.txt
+for c in ${arr[@]}
+do 
+ 	sudo bash -c 'echo "<tr>" >> /home/fred/testtabel.txt'
+ 	sudo bash -c 'cat /home/fred/SiegeCSV/'$lognaam'-'$c'.txt >> /home/fred/testtabel.txt'
+    sudo bash -c 'echo "</tr>" >> /home/fred/testtabel.txt'
+    rm -f /home/fred/SiegeCSV/$lognaam-$c.txt
+done
+echo "</table>" >> /home/fred/testtabel.txt
+rm -f /home/fred/SiegeCSV/$lognaam.CSV
+
+
+echo 
+echocolor "**************************************************************************"
+echocolor "**                         DONE, HOORAY                                 **"
+echocolor "**************************************************************************"
+echo 
