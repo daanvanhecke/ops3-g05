@@ -1,8 +1,8 @@
 #!/bin/bash
 function echocolor() { # $1 = string
-    COLOR='\033[1;33m'
-    NC='\033[0m'
-    printf "${COLOR}$1${NC}\n"
+COLOR='\033[1;33m'
+NC='\033[0m'
+printf "${COLOR}$1${NC}\n"
 }
 
 echocolor "**************************************************************************"
@@ -36,7 +36,7 @@ echo
 echocolor "check site for following concurring users:"
 for a in ${arr[@]}
 do 
-  echo -n $a " "
+echo -n $a " "
 done
 echo
 echo
@@ -51,7 +51,7 @@ echo
 echocolor "continue? (type y / n)"
 read checkers
 if [ $checkers = "n" ]; then     
-        exit    
+    exit    
 fi
 
 echo 
@@ -69,8 +69,8 @@ echo
 
 COUNTER=0
 while [  $COUNTER -lt $AANTALXTEST ]; do
-siege -c $b -d $Dwaarde -t $Twaarde
-let COUNTER=COUNTER+1 
+    siege -c $b -d $Dwaarde -t $Twaarde
+    let COUNTER=COUNTER+1 
 done
 
 echo 
@@ -92,7 +92,6 @@ sudo bash -c 'echo "" > /usr/local/var/siege.log'
 #9) Succesfull
 #10) failed
 # 4 - 7 -8
-
 COUNTER=2
 while [  $COUNTER -lt 11 ]; do
 	
@@ -100,10 +99,10 @@ while [  $COUNTER -lt 11 ]; do
         then
             #voor resultstable
             sudo bash -c 'echo -n "<th>" '$b' "</th>" > /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
-			sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
- 			VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
- 			sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
-			sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
+            sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
 
             #voor transactionstable
             sudo bash -c 'echo -n "<th>" '$b' "</th>" > /home/fred/SiegeCSV/trans-'$b'.txt'
@@ -112,16 +111,16 @@ while [  $COUNTER -lt 11 ]; do
             sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/trans-'$b'.txt'
             sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/trans-'$b'.txt'
 
-      elif [ $COUNTER -eq 3 ] || [ $COUNTER -eq 6 ] 
-        then
+        elif [ $COUNTER -eq 3 ] || [ $COUNTER -eq 6 ] 
+            then
 
-    		sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
             VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
-    		sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
-			sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
 
-      elif [ $COUNTER -eq 9 ]
-        then
+        elif [ $COUNTER -eq 9 ]
+            then
             #resultstable
             sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
             VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
@@ -134,11 +133,10 @@ while [  $COUNTER -lt 11 ]; do
             sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/trans-'$b'.txt'
             sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/trans-'$b'.txt'
 
-            CHCK=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$9; ++n} END { print sum }'`
-            let SUC=SUC+CHCK
 
-      elif [ $COUNTER -eq 10 ] 
-        then
+
+        elif [ $COUNTER -eq 10 ] 
+            then
             #resultstable
             sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
             VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
@@ -151,31 +149,36 @@ while [  $COUNTER -lt 11 ]; do
             sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/trans-'$b'.txt'
             sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/trans-'$b'.txt'
 
-            CHCK=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$10; ++n} END { print sum }'`
-            let FAI=FAI+CHCK
 
-      elif [ $COUNTER -eq 5 ]; 
-        then
+
+        elif [ $COUNTER -eq 5 ]; 
+            then
 
             sudo bash -c 'echo -n "<td> " >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
             VAR=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$"'"$COUNTER"'"; ++n} END { print sum/"'"$AANTALXTEST"'" }'`
 
-                if [ $VAR != "nan" ]
-                    then
-                    sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
-                    sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
-                else
-                    sudo bash -c 'echo -n " 0 </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
-                fi
-    fi
-let COUNTER=COUNTER+1 
- done
+            if [ $VAR != "nan" ]
+                then
+                sudo bash -c 'echo -n '$VAR' >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+                sudo bash -c 'echo -n " </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            else
+                sudo bash -c 'echo -n " 0 </td>" >> /home/fred/SiegeCSV/'$lognaam'-'$b'.txt'
+            fi
+        fi
+        let COUNTER=COUNTER+1 
+    done
 done
+
+FAI=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$10; ++n} END { print sum }'`
+SUC=`cat /home/fred/SiegeCSV/$lognaam.CSV  | awk -F',' '{sum+=$9; ++n} END { print sum }'`
+
+
 echo 
 echocolor "**************************************************************************"
 echocolor "**            TEST RUN FINISHED: MAKING GLOBAL OVERVIEW                 **"
 echocolor "**************************************************************************"
 echo 
+
 echo "         <div class='pure-g'>" > /home/fred/testtabel.txt
 echo "          <div class='pure-u-1-2'>" >> /home/fred/testtabel.txt
 echo "           <table class='pure-table pure-table-horizontal'>" >> /home/fred/testtabel.txt
@@ -191,16 +194,14 @@ echo "           </div>" >> /home/fred/testtabel.txt
 echo "           <div class='pure-u-1-2'>" >> /home/fred/testtabel.txt
 echo "           <table style='display: none;' id='failorsuc'>" >> /home/fred/testtabel.txt
 echo "           <thead>" >> /home/fred/testtabel.txt
-echo "       <tr>" >> /home/fred/testtabel.txt
-echo "           <th></th>" >> /home/fred/testtabel.txt
-echo "           <th>Succes</th>" >> /home/fred/testtabel.txt
-echo "           <th>Fails</th>" >> /home/fred/testtabel.txt
-echo "       </tr>" >> /home/fred/testtabel.txt
+echo "           <th> succesfull </th> <th> failure </th>" >> /home/fred/testtabel.txt
 echo "   </thead>" >> /home/fred/testtabel.txt
 echo "   <tbody>" >> /home/fred/testtabel.txt
 echo "       <tr>" >> /home/fred/testtabel.txt
-echo "           <th>Results</th>" >> /home/fred/testtabel.txt
+echo "           <th>Succesfull</th>" >> /home/fred/testtabel.txt
 echo "           <td>"$SUC"</td>" >> /home/fred/testtabel.txt
+echo "        </tr><tr>" >> /home/fred/testtabel.txt
+echo "         <th>failures</th>" >> /home/fred/testtabel.txt
 echo "           <td>"$FAI"</td>" >> /home/fred/testtabel.txt
 echo "       </tr>" >> /home/fred/testtabel.txt
 echo "   </tbody>" >> /home/fred/testtabel.txt
@@ -236,12 +237,13 @@ echo "   <th> Failed Transactions </th>" >> /home/fred/testtabel.txt
 echo "  </tr>" >> /home/fred/testtabel.txt
 echo " </thead>" >> /home/fred/testtabel.txt
 echo " <tbody>" >> /home/fred/testtabel.txt
+
 for c in ${arr[@]}
 do 
- 	sudo bash -c 'echo "<tr>" >> /home/fred/testtabel.txt'
- 	sudo bash -c 'cat /home/fred/SiegeCSV/'$lognaam'-'$c'.txt >> /home/fred/testtabel.txt'
-    sudo bash -c 'echo "</tr>" >> /home/fred/testtabel.txt'
-    rm -f /home/fred/SiegeCSV/$lognaam-$c.txt
+sudo bash -c 'echo "<tr>" >> /home/fred/testtabel.txt'
+sudo bash -c 'cat /home/fred/SiegeCSV/'$lognaam'-'$c'.txt >> /home/fred/testtabel.txt'
+sudo bash -c 'echo "</tr>" >> /home/fred/testtabel.txt'
+rm -f /home/fred/SiegeCSV/$lognaam-$c.txt
 done
 echo "</tbody></table>" >> /home/fred/testtabel.txt
 
@@ -249,9 +251,10 @@ echo "</tbody></table>" >> /home/fred/testtabel.txt
 echo "<table style='display: none;' id='transdata'><thead><tr><th> #Conc. users </th><th> #Transactions </th><th> Succesful Transactions </th><th> Failed Transactions </th></thead><tbody>" >> /home/fred/testtabel.txt 
 for d in ${arr[@]}
 do 
-    sudo bash -c 'echo "<tr>" >> /home/fred/testtabel.txt'
-    sudo bash -c 'cat /home/fred/SiegeCSV/trans-'$d'.txt >> /home/fred/testtabel.txt'
-    sudo bash -c 'echo "</tr>" >> /home/fred/testtabel.txt'
+sudo bash -c 'echo "<tr>" >> /home/fred/testtabel.txt'
+sudo bash -c 'cat /home/fred/SiegeCSV/trans-'$d'.txt >> /home/fred/testtabel.txt'
+sudo bash -c 'echo "</tr>" >> /home/fred/testtabel.txt'
+rm -f /home/fred/SiegeCSV/trans-$d.txt
 done
 echo "</tbody></table>" >> /home/fred/testtabel.txt
 
@@ -266,6 +269,7 @@ echo
 cp -r /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/template/boven.html /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/pages/$lognaam.html  
 cat /home/fred/testtabel.txt >> /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/pages/$lognaam.html  
 cat /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/template/onder.html >> /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/pages/$lognaam.html  
+
 echo "<li class='pure-menu-item'><a href='pages/"$lognaam".html' class='pure-menu-link'>"$lognaam"</a></li>" >> /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/menu-i.html 
 echo "<li class='pure-menu-item'><a href='"$lognaam".html' class='pure-menu-link'>"$lognaam"</a></li>" >> /home/fred/Githubs/Systeembeheer/Linux/scripts/Website/menu-t.html 
 

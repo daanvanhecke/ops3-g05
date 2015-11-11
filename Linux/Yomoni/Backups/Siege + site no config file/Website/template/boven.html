@@ -12,11 +12,15 @@
         <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/side-menu.css">
+        <link rel="stylesheet" href="../css/layouts/side-menu.css">
     <!--<![endif]-->    
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/eigenjs.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="../js/eigenjs.js"></script>
+
 </head>
 <body>
 <div id="layout">
@@ -28,10 +32,10 @@
 
     <div id="menu">
         <div class="pure-menu">
-            <a class="pure-menu-heading" href="index.html">YOMoni</a>
+            <a class="pure-menu-heading" href="../index.html">YOMoni</a>
 
             <ul class="pure-menu-list">
-                    <div class="activei" id="activei">
+                    <div class="active" id="active">
                             <!-- menu dynamisch aangevuld -->
                     </div>
             </ul>
@@ -40,26 +44,14 @@
 
     <div id="main">
         <div class="header">
-            <h1>Test results monitoring</h1>
+            <h1>$title</h1>
         </div>
 
         <div class="content">
-            <h2 class="content-subhead">introductie</h2>
+            <h2 class="content-subhead">Testomgeving</h2>
             <p>
-                ...
+                Uitleg over de test-omgeving
             </p>
 
-            <h2 class="content-subhead">Extra info</h2>
-            <p>
-                ...
-            </p>
-
-            <h2 class="content-subhead">groupsinfo</h2>
-            <p>
-                ...
-            </p>
-        </div>
-    </div>
-</div>
-</body>
-</html>
+            <h2 class="content-subhead">Overview</h2>
+            <!-- start splitspunt --> 
