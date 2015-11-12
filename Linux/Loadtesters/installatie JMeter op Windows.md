@@ -5,7 +5,7 @@ Download Apache JMeter 2.13 from http://jmeter.apache.org/download_jmeter.cgi
 
 
 ### GuiSession
-1) Unzip the file and open the file by going into bin -> ApacheJMeter.
+1. Unzip the file and open the file by going into bin -> ApacheJMeter.
 2) Open the template "build-web-test-plan".
 3) Under the tab HTTP Request Defaults you set your server IP that you want to loadtest (port number).
 4) At tab Home page you set the page you want to loadtest from your server <ip>/page.
