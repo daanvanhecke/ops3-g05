@@ -78,3 +78,13 @@ Use the following commands on all 3 switches on fa0/1 and fa0/3
 
 Using the Addressing Table, configure the management interface on all switches with the appropriate IP address.
 
+###Part 3: Configure the Root Bridge and Examine PVST+ Convergence
+
+######Step 2
+
+* Switch 2 has to become the primary root for the STP: `spanning-tree vlan 1,10,99 root primary`
+* Similarly, switch 1 has to become the secondary root for the STP: `spanning-tree vlan 1,10,99 root secondary`
+
+######Step 3
+
+You may run into some problems when trying to do these steps in Cisco Packet Tracer. Specifically part b seems impossible to be done. You aren't able to debug the spanning-tree events.
