@@ -41,3 +41,40 @@ Basic settings for switches, switch 1 is used in these commands
 * To test whether all interfaces are down, go to the user EXEC mode and use `show ip int br`
 * Repeat these steps for switch 2 and 3. Keep in mind that step 4, changing the hostname, requires you to change `S1` to the appropriate hostname. 
 * In steps 13 and 14 we only enable synchronous logging on the console line. If you'ld like to prevent console messages from interrupting command entry on other lines, simply add the `logging synchronous` to those lines.
+
+###Part 2: Configure VLANs, Native VLAN, and Trunks
+
+######Step 1
+
+See the assignment for instructions on how to create the VLANs on the switches.
+
+Use the `show vlan` command in privileged EXEC mode to check whether the vlans were created with the appropriate name.
+
+######Step 2
+
+For switch 1:
+
+1. In global configuration mode: `int fa0/6`
+2. `switchport mode access`
+3. `switchport access vlan 10`
+4. `no sh`
+
+For switch 3: 
+
+1. In global configuration mode: `int fa0/18`
+2. `switchport mode access`
+3. `switchport access vlan 10`
+4. `no sh` 
+
+######Step 3
+
+Use the following commands on all 3 switches on fa0/1 and fa0/3
+
+1. switchport mode trunk
+2. switchport trunk native vlan 99
+3. no sh
+
+######Step 4
+
+Using the Addressing Table, configure the management interface on all switches with the appropriate IP address.
+
