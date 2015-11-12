@@ -37,7 +37,8 @@ resultaten toelicht. De bedoeling is deze presentatie te geven op Config Managem
 
 ### Kanban-bord
 
-(schermafbeeldingen van de toestand van het Kanban-bord invoegen elke week voor de samenkomst met de begeleider, tot oplevering van de opdracht)
+![Deel1](http://puu.sh/liHEy/6f9ab19097.png)
+![Deel2](http://puu.sh/liHFh/2e7b3b026d.png)
 
 ### Tijdbesteding
 
