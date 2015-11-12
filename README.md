@@ -11,7 +11,7 @@
 
 ## Gebruikte tools
 
-* Kanban-bord: [https://huboard.com/HoGentTIN/ops3-g05](https://huboard.com/HoGentTIN/ops3-g05)
+* Kanban-bord: [Huboard groep 6](https://huboard.com/HoGentTIN/ops3-g05)
 * Tijdregistratie: [Toggl groep 5](https://www.toggl.com/app/projects/829040/list/page/1)
 
 ## Begeleiders
