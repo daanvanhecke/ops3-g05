@@ -19,7 +19,7 @@ resultaten toelicht. De bedoeling is deze presentatie te geven op Config Managem
 ####Opstelling 1: Eenvoudige lampstack
 * Automatisatie: eenvoudige LAMP stack opstellen met PHP-webapplicatie.
 * Automatisatie: databank opvullen met artikels aan de hand van een back-end (Wordpress).
-* Automatisatie: Server opzetten voor monitoring (collectd + collectd-web).
+* Automatisatie: server opzetten voor monitoring (collectd + collectd-web).
 * Verscheidene frameworks voor loadtesting opzetten.
 * Testschema's opstellen en uitvoeren.
 * Servers aanpassen: cache, loadbalancer, ...
@@ -34,6 +34,7 @@ resultaten toelicht. De bedoeling is deze presentatie te geven op Config Managem
 * DNS als load-balancer.
 * Een cache-systeem opstellen zodat er een cache wordt bijgehouden voor bepaalde HTTP-requests.
 * De resultaten documenteren van deze opstelling.
+
 ### Kanban-bord
 
 (schermafbeeldingen van de toestand van het Kanban-bord invoegen elke week voor de samenkomst met de begeleider, tot oplevering van de opdracht)

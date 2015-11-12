@@ -24,10 +24,10 @@ In this example we besiege multiple pages of the Wordpress site from our stack.
 1. Make a new HTTP request (under sampler -> http request).
 2. Add all the IP-addresses:
 
-192.168.56.77/wordpress/
-192.168.56.77/wordpress/index.php/2015/09/21/demo-post-48/
-192.168.56.77/wordpress/index.php/category/uncategorized/
+- 192.168.56.77/wordpress/
+- 192.168.56.77/wordpress/index.php/2015/09/21/demo-post-48/
+- 192.168.56.77/wordpress/index.php/category/uncategorized/
 
-## Configure test scenario 
+### Configure test scenario 
 
-## START THE ATTACK: RUN TEST or CTRL + R !!!
+### Start attack: Run test or CTRL + R !!!
