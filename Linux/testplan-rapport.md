@@ -6,14 +6,12 @@
 ### Testplan
 
 Auteur(s) testplan: 'Daan Van Hecke'
-Testolan opzetten voor:
+
+Testplan opzetten voor:
 _Wordpress werkt
 _collectd server werk( surven naar serverip/collectd/)
 _framework voor load testers werken op lampstack
 _collectd web ontvangt metrieken van de lampstack
-
-
-
 
 
 - Pingen naar de LAMP webserver. + 
