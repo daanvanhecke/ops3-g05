@@ -42,7 +42,8 @@
 
 ### Daan Van Hecke
 
-* ...
+* Monit starten
+* Ansbible role aanmaken
 
 [Afbeelding individueel rapport tijdregistratie]
 
@@ -57,6 +58,8 @@
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
+* Alles klaar krijgen van Monit.
+* De tests afwerken.
 
 ## Waar hebben jullie nog problemen mee?
 
