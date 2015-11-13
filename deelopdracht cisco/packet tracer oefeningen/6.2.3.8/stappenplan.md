@@ -50,3 +50,69 @@ S0/0/0 is the DCE side of the serial connection so we also have to change the cl
 11. clock rate 128000
 12. end
 13. copy running-config startup-config 
+
+## Part 2: Configure a Multiarea OSPFv2 Network ##
+
+######Step 2
+
+After adding the networks you have to set the loopback networks to passive.
+
+
+For R1 this is:
+
+1. R1(config-router)#passive-interface lo2
+2. R1(config-router)#passive-interface lo1
+
+lo0 as default route:
+
+1. R1(config)#ip route 0.0.0.0 0.0.0.0 lo0
+
+Configure OSPF to propagate:
+
+1. R1(config-router)#default-information originate 
+
+######Step 3
+
+1. R2(config)#: router ospf 1
+2. router-id 2.2.2.2
+3. R2(config-router)#network 192.168.6.0 0.0.0.255 area 3
+4. R2(config-router)#network 192.168.12.0 0.0.0.3 area 0
+5. R2(config-router)#network 192.168.23.0 0.0.0.3 area 3
+6. passive-interface lo6
+
+######Step 4
+
+1. R2(config)#: router ospf 1
+2. router-id 3.3.3.3
+3. R3(config-router)#network 192.168.4.0 0.0.0.255 area 3
+4. R3(config-router)#network 192.168.5.0 0.0.0.255 area 3
+5. R3(config-router)#network 192.168.23.0 0.0.0.3 area 3
+6. passive-interface lo4
+7. passive-interface lo5
+
+######Step 6
+
+For router 1:
+
+1. for s0/0/0: `R1(config-if)#ip ospf message-digest-key 1 md5 Cisco123`
+2. R1(config-if)#ip ospf authentication message-digest  
+
+Repeat for the other 2 routers.
+
+## Part 3: Configure Interarea Summary Routes ##
+
+######Step 2
+
+Due to the lack of space the answer to questions 2b will be written down here:
+
+R2:
+
+                Summary Net Link States (Area 0)
+| Link ID   |       ADV Router   |   Age      |   Seq#    |   Checksum|
+|---|---|---|---|---|
+|192.168.6.1 |    2.2.2.2    |     574    |   0x80000005 |0x005190|
+|192.168.23.0  |  2.2.2.2        | 559       |  0x80000008 |0x001ba7|
+|192.168.1.1    | 1.1.1.1       |  1423       | 0x80000003 |0x00aa42|
+|192.168.2.1    | 1.1.1.1       |  1423       | 0x80000004 |0x009d4d|
+|192.168.4.1    | 2.2.2.2       |  566        | 0x80000006 |0x0003cf|
+|192.168.5.1    | 2.2.2.2      |   566        | 0x80000007| 0x00f5da|
