@@ -54,7 +54,7 @@ In this example we'll use router 1, although these commands are mostly the same 
 13. end
 14. copy running-config startup-config 
 
-###Part 3: Configure Interarea Route Summarization
+##Part 3: Configure Interarea Route Summarization ##
 
 ######Step 3
 
