@@ -59,6 +59,10 @@ All commands required are available in the assignment.
 * exit
 * ip route 0.0.0.0 0.0.0.0 lo0
 
+######Step 4
+* router ospf 1
+* network 192.168.23.0 0.0.0.3 area 3
+
 
 
 
