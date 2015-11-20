@@ -1,0 +1,41 @@
+---
+
+
+- name: download monit file
+  get_url:
+    url: '{{ mmonit_download_url }}'
+    dest: '/tmp/{{ mmonit_archive_file }}'
+    
+- name: Unarchive monit
+  unarchive:
+    src: '/tmp/{{ mmonit_archive_file }}'
+    dest: /tmp
+    copy: no
+
+- name: Fix mmonit sqlite DB owner
+  file:
+    path: '/tmp/mmonit-{{ mmonit_version }}/db/mmonit.db'
+    owner: '{{ mmonit_user }}'
+    
+- name: copy mmonit files to system
+  command:
+    rsync -ai '{{ item.src }}' '{{ item.dest }}'
+  register: rsync_config
+  changed_when: "'>f' in rsync_config.stdout"
+  with_items:
+    - src: '/tmp/mmonit-{{ mmonit_version }}/'
+      dest: '{{ mmonit_home }}'
+  # cannot use variable for a sudo_user parameter
+  sudo_user: mmonit
+
+- name: link files to conviniant places
+  file:
+    src: '{{ item.src }}'
+    dest: '{{ item.dest }}'
+    state: link
+  with_items:
+    - src: '{{ mmonit_home }}/conf'
+      dest: /etc/mmonit
+    - src: '{{ mmonit_home }}/logs'
+      dest: /var/log/mmonit
+  

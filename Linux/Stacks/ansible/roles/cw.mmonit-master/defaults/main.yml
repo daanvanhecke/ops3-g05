@@ -1,0 +1,27 @@
+---
+
+
+## MMonit version to install
+# This should be quoted to be interpreted as a string.
+mmonit_version: '3.4.1'
+
+## MMonit License
+#
+# If you do have one please use yours. This is a trial license as given by
+# the upstream tarball and might not work. Please check MMonit site for
+# details.
+mmonit_license_owner: "Tildeslash Ltd. - Trial License"
+mmonit_license_key: >-
+  K3YUYKNJMR-2BIRF5SIC3-K3SERHNH3B-PQKOLAGJC7-2ZLTJB3V5I
+  BIYMKW5Z7B-WL55QJJHOY-QFBXFSNRNN-JMFZKVF5DZ-SHU2AHWWV3
+  QGIZ6R5U7A-AZYFI674KQ-3647L6ULXO-NEHEHHGVTF-YTKEVSYOR6
+  UTYEVKLWJX-4QLIFZNY7O-A4NNTOI4P5-WHUV5AFI4A-PS7PVX3PC5
+  MRVYO
+
+# address to listen on
+mmonit_host: '*'
+
+# MMonit user to create
+mmonit_user: mmonit
+mmonit_user_comment: M/Monit daemon
+mmonit_home: /var/lib/mmonit
