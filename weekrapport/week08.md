@@ -45,7 +45,7 @@
 * Monit starten
 * Ansbible role aanmaken
 
-[Afbeelding individueel rapport tijdregistratie]
+![Week 8](http://puu.sh/ls5JL/1d193a5062.png)
 
 ## Wat plan je volgende week te doen?
 
