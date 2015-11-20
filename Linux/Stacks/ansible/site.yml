@@ -34,5 +34,9 @@
 
             tags: ["collectd"] }
 
-
-
+- hosts: lampMonit
+  sudo:  true
+  roles:
+     - bertvv.el7
+     - cw.mmonit
+     - bertvv.httpd

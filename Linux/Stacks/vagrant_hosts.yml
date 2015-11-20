@@ -37,3 +37,6 @@
 
 - name: collectd
   ip: 192.168.56.87
+  
+- name: lampMonit
+  ip: 192.168.56.97
