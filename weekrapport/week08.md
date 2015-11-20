@@ -29,10 +29,9 @@
 
 ### Matthias Derudder
 
-* Testen Windows server core met powershell
-* Deelopdracht Cisco opstart en labo 1 + 2 (not finished)
+* Windows server core deployment
 
-[Afbeelding individueel rapport tijdregistratie]
+![Week 8](http://i.imgur.com/CzeBjPs.png)
 
 ### Frederik Van Brussel
 
