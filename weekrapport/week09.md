@@ -32,7 +32,7 @@
 * Windows Server Deploymeny
 * Azure
 
-![Week 9](http://i.imgur.com/CzeBjPs.png)
+![Week 9](http://i.imgur.com/0HNO0VJ.png)
 
 ### Frederik Van Brussel
 
