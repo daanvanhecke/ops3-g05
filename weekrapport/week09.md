@@ -23,9 +23,9 @@
 
 ### Kjeld Antjon
 
-* ...
+* Labo 3-6 afgewerkt (labo 6 in les)
 
-[Afbeelding individueel rapport tijdregistratie]
+![kjeldweek9](./Screenshots/kjeldweek9.png)
 
 ### Matthias Derudder
 
@@ -50,6 +50,11 @@
 
 ### Algemeen
 ### Kjeld Antjon
+
+* Fysieke opstelling van 1 labo (in les)
+* verder testen powershell core
+* test voorbereiden powershell
+
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
