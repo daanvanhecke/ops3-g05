@@ -34,13 +34,12 @@
 
             tags: ["collectd"] }
 
-<<<<<<< HEAD
 - hosts: siegemachien
   sudo: true
   roles:
     - bertvv.el7
     - Siege
-=======
+    
 - hosts: lampMonit
   sudo:  true
   roles:
@@ -56,8 +55,6 @@
              [{ plugin: "cpu "},
               { plugin: "logfile"},
               { plugin: "memory" }],
->>>>>>> 61deead598e37a002465595c6747de003d373281
-
              collectd_plugins_multi:
              {network: { Server: '192.168.56.87'}},
 

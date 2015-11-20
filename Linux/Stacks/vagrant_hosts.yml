@@ -38,10 +38,7 @@
 - name: collectd
   ip: 192.168.56.87
 
-- name: siegemachien
-  ip: 192.168.56.107
-  
-- name: lampMonit
+- name: lampmonit
   ip: 192.168.56.97
   synced_folders:
     - src: www
@@ -50,3 +47,7 @@
         :owner: root
         :group: root
         :mount_options: ['dmode=0755', 'fmode=0644']
+
+- name: siegemachien
+  ip: 192.168.56.107
+  
