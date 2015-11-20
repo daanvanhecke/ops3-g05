@@ -29,9 +29,10 @@
 
 ### Matthias Derudder
 
-* ...
+* Windows Server Deploymeny
+* Azure
 
-[Afbeelding individueel rapport tijdregistratie]
+![Week 9](http://i.imgur.com/CzeBjPs.png)
 
 ### Frederik Van Brussel
 
