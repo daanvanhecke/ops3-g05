@@ -23,9 +23,10 @@
 
 ### Kjeld Antjon
 
-* ...
+* Testing Windows Powershell core
+* cisco labo 1 & 2
 
-[Afbeelding individueel rapport tijdregistratie]
+![kjeldweek8](./Screenshots/kjeldweek8.png)
 
 ### Matthias Derudder
 
