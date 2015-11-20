@@ -37,3 +37,6 @@
 
 - name: collectd
   ip: 192.168.56.87
+
+- name: siegemachien
+  ip: 192.168.56.107
