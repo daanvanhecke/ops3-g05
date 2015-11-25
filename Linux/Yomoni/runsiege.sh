@@ -94,7 +94,7 @@ echo
 
 COUNTER=0
 while [  $COUNTER -lt "$NUMBEROFTESTS" ]; do
-    siege -c "$b" -d "$DELAY" -t "$TIME"
+    /usr/local/bin/siege -c "$b" -d "$DELAY" -t "$TIME"
     let COUNTER=COUNTER+1 
 done
 
@@ -110,7 +110,7 @@ sudo bash -c 'echo "" > /usr/local/var/siege.log'
 
 COUNTER=2
 mkdir -p "$DIR"/tmp
-chmod -R 75 "$DIR"/tmp
+chmod -R 775 "$DIR"/tmp
 
 while [  $COUNTER -lt 11 ]; do
 	
