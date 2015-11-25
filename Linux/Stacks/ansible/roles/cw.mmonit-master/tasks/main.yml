@@ -1,0 +1,36 @@
+
+- name: check mmonit version
+  shell: |
+    mmonit -v | sed -n 's,mmonit/\([^ ]\+\) .*,\1,p'
+  register: mmonit_sys_version
+  ignore_errors: yes
+  changed_when: false
+
+- name: create mmonit user
+  user:
+    name: '{{mmonit_user}}'
+    comment: '{{mmonit_user_comment}}'
+    system: yes
+    home: '{{ mmonit_home }}'
+    state: present
+  
+- include: install.yml
+  when:
+    mmonit_sys_version.stdout != mmonit_version
+
+- name: Generate mmonit file from templates
+  template:
+    src: '{{ item.src }}'
+    dest: '{{ item.dest | default("/" + item.src )}}'
+    owner: '{{ item.owner | default("root") }}'
+    group: '{{ item.group | default("root") }}'
+    mode: '{{ item.mode | default("0644") }}'
+  with_items:
+    - src: usr/local/bin/mmonit
+      mode: '0755'
+    - src: etc/init/mmonit.conf
+    - src: etc/mmonit/server.xml
+      mode: '0600'
+      owner: '{{ mmonit_user }}'
+      group: '{{ mmonit_user }}'
+    

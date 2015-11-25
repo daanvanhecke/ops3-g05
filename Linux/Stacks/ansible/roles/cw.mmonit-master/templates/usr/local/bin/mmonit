@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Simple mmonit wrapper.
+
+{{ mmonit_home }}/bin/mmonit $*
