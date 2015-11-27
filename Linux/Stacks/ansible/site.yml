@@ -34,15 +34,15 @@
 
             tags: ["collectd"] }
 
-- hosts: siegemachien
+- hosts: yomoni
   sudo: true
   roles:
     - bertvv.el7
     - bertvv.httpd
     - Siege
     
-- hosts: lampMonit
-  sudo:  true
+- hosts: lampmonit
+  sudo: true
   roles:
     - bertvv.el7
     - sepolicy
