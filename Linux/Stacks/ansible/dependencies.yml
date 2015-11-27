@@ -6,4 +6,3 @@
 - src: bertvv.mariadb
 - src: bertvv.wordpress
 - src: bertvv.collectd
-- src: Siege
