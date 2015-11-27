@@ -21,3 +21,7 @@ el7_firewall_allow_ports:
 
 el7_user_groups:
   - wheel
+
+siege_targets:
+  - 192.168.56.77/wordpress 
+

@@ -38,13 +38,13 @@
   sudo: true
   roles:
     - bertvv.el7
+    - bertvv.httpd
     - Siege
     
 - hosts: lampMonit
   sudo:  true
   roles:
     - bertvv.el7
-    - cw.mmonit
     - sepolicy
     - bertvv.httpd
     - bertvv.mariadb

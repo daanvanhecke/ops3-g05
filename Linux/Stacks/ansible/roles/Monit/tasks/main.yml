@@ -1,0 +1,51 @@
+# roles/ROLENAME/tasks/main.yml
+---
+# Before installing any new program, update your server
+- name: upgrade all packages
+  yum: name=* state=latest
+
+# Download en unzip Siege en zet hem in de Home directory van de vagrant host.
+#- name: Download Siege
+#  get_url: url=http://download.joedog.org/siege/siege-3.1.0.tar.gz dest=/home/vagrant/ mode=0777
+# unzippen
+
+- name: Copy monit tar
+  copy:
+    src: monit-5.15.tar
+    dest: /home/vagrant
+  tags: tarcopy
+- unarchive: src=/home/vagrant/monit-5.15.tar dest=/home/vagrant/ copy=no
+
+- name: install Libcrypto.so.6
+  yum: name="libcrypto.so.6" state=present
+
+- name: install libssl.so.6
+  yum: name="libssl.so.6"
+
+- name: Configure and complete the installation process
+  command: sudo {{ item }} chdir="/home/vagrant/siege-3.1.0"
+  with_items:
+    - ./configure
+    - make
+    - make install
+	
+- name: Configure monit.conf file
+  copy: config file
+    src: 
+    dest: path=/etc/monit.conf
+  tags: 
+
+- name: Make id file
+  file: path=/var/monit/id state=touch mode=0777
+
+- name: Make monitlog-file 
+  file: path=/usr/local/var/monit.log state=touch mode=0777
+
+- name: 
+  copy:
+    src: 
+    dest: 
+  tags: 
+
+- unarchive: src=/home/vagrant/Yomoni.tar.gz dest=/home/vagrant copy=no
+
