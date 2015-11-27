@@ -30,9 +30,6 @@ mariadb_root_password: admin
 wordpress_database: wordpress
 wordpress_user: admin
 wordpress_password: admin
-mariadb_init_scripts:
-  - database: wordpress
-    script: files/init.sql
 
 el7_firewall_allow_ports:
   - 25826/udp

@@ -50,6 +50,7 @@
     - bertvv.mariadb
     - bertvv.wordpress
     - phpmyadmin
+    - Monit
     - { role: bertvv.collectd,
              collectd_plugins:
              [{ plugin: "cpu "},

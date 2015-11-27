@@ -1,0 +1,65 @@
+# roles/ROLENAME/tasks/main.yml
+---
+
+
+# Download en unzip Monit en zet hem in de Home directory van de vagrant host.
+#- name: Download Siege
+#  get_url: url=https://mmonit.com/monit/dist/monit-5.15.tar.gz dest=/home/vagrant/ mode=0777
+# unzippen
+
+- name: Copy monit tar
+  copy:
+    src: monit-5.15.tar.gz
+    dest: /home/vagrant
+  tags: tarcopy
+- unarchive: src=/home/vagrant/monit-5.15.tar.gz dest=/home/vagrant/ copy=no
+
+- name: install Libcrypto.so.6
+  yum: name="libcrypto.so.6" state=present
+
+- name: install libssl.so.6
+  yum: name="libssl.so.6"
+
+- name: Configure and complete the installation process
+  command: sudo {{ item }} chdir="/home/vagrant/siege-3.1.0"
+  with_items:
+    - ./configure
+    - make
+    - make install
+	
+- name: Configure monit.conf file
+  copy: config file
+    src: path= 
+    dest: path=/etc/monit.conf
+  tags: 
+
+- name: Make id file
+  file: path=/var/lib/monit/id state=touch mode=0777
+
+- name: Make monitlog-file 
+  file: path=/usr/var/log/monit.log state=touch mode=0777
+
+- name: 
+  copy:
+    src: 
+    dest: 
+  tags: 
+
+- unarchive: src=/home/vagrant/Yomoni.tar.gz dest=/home/vagrant copy=no
+
+- name: Install monit
+  command: sudo yum install monit
+
+- name: Startup monit
+  command: sudo service monit start
+
+- name: Start monit with start-update
+  command: sudo systemctl enable monit.service
+
+- name: Enable Firewall for the port 2812
+  command: sudo firewall-cmd --add-port=2812/tcp --permanent
+
+- name: Restart firewall to apply changes
+  command: sudo systemctl restart firewalld
+  
+
