@@ -14,8 +14,6 @@
 
 ### Algemeen
 
-
-
 * Fysieke opstelling Cisco opdracht 6.2.3.8
 * Windows Server Powershell deployment/testing
 
@@ -43,9 +41,10 @@
 
 ### Daan Van Hecke
 
-* ...
+* Samen met Frederik Ansible role Monit schrijven stap voor stap.
+* Voorbereiden test Powershell
 
-[Afbeelding individueel rapport tijdregistratie]
+![Week 10)(http://puu.sh/lD96I/c39f31a303.png)
 
 ## Wat plan je volgende week te doen?
 
@@ -59,6 +58,8 @@
 ### Matthias Derudder
 ### Frederik Van Brussel
 ### Daan Van Hecke
+* Ansible role van Monit afwerken en open-source maken.
+* Testen of alles werkt op verschillende machines.
 
 ## Waar hebben jullie nog problemen mee?
 
