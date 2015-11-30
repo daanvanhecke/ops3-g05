@@ -9,6 +9,7 @@
   with_items:
     - firewall-cmd --add-port=2812/tcp --permanent
     - systemctl restart firewalld
+    - service monit start
     - monit
 
 - name: copy monitrc for dashboard

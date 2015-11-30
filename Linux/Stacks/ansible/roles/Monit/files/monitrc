@@ -14,16 +14,18 @@
 ## commands to a running Monit daemon. See the Monit Wiki if you want to
 ## enable SSL for the HTTP interface.
 #
- set httpd port 2812 and
-   use address localhost  # only accept connection from localhost
-   allow localhost        # allow localhost to connect to the server and
-    allow admin:monit      # require user 'admin' with password 'monit'
+#set httpd port 2812 and
+#   use address localhost  # only accept connection from localhost
+#  allow localhost        # allow localhost to connect to the server and
+#   allow admin:monit      # require user 'admin' with password 'monit'
 #    allow @monit
 #    allow @users readonly
  
-#set httpd port 2812
-#allow 0.0.0.0/0.0.0.0
-#allow admin:monit
+set httpd port 2812
+use address 0.0.0.0
+allow 0.0.0.0/0.0.0.0
+allow admin:monit
+set daemon 120
  
 ###############################################################################
 ## Services
