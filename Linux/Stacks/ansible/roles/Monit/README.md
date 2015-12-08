@@ -24,9 +24,8 @@ Brute Force.
 For more information about this loadtesting tools, I recommend to visit the [`Official website`](https://www.joedog.org/siege-home/).
 
 The following things will be done during the installation of this role:
-- Update and upgrade your server
-- Install Siege version 3.1.0
-- install the `Development tools` package group
+- Install Monit latest version
+- Copy the monitrc file to your server.
 
 ## Getting started
 
@@ -36,8 +35,8 @@ The following things will be done during the installation of this role:
 At this moment, we are using a vagrant-environment. The role will be installed in the home directory of the vagrant-host. More info about how to use Vagrant, u can find [`here`] (https://docs.vagrantup.com/v2/).
 
 ## Important files
-### .siegerc
-As mentioned before, the roll will be installed in the home directory of the vagrant host ( `Home/vagrant/` ). If you use the `list -a` -command in this directory, you will notice a file called `.siegerc` .
+### .monitrc
+As mentioned before, the roll will be installed in the etc directory of the vagrant host ( `Home/vagrant/` ). If you use the `list -a` -command in this directory, you will notice a file called `.siegerc` .
 
 In this file you got the opportunity to edit the settings of your load. For example you can change howmany concurrent users will be simulated. By default Siege configuration suggests 25 concurrent users over a period of 1 minute.  Uncomment the variables shown below, and also if you want any other commented settings then don’t forget to remove the pound sign (`#`)
 List of settings you can edit here.

@@ -5,9 +5,9 @@
 
 ### Deliverables
 Geef een demo van de verschillende opstellingen, toon de resultaten van de analyse van de meetgegevens.
-*Github/Bitbucket repository met de code om de opstellingen te reconstrueren. Dit impliceert het gebruik van
-config management (Ansible). Gebruik waar mogelijk bestaande Ansible rollen (kijk bv. naar https://github.com/
-bertvv/).
+
+* Github/Bitbucket repository met de code om de opstellingen te reconstrueren. Dit impliceert het gebruik van
+config management (Ansible). Gebruik waar mogelijk bestaande Ansible rollen (kijk bv. naar https://github.com/bertvv/).
 * Schrijf een verslag over jullie ervaringen, zorg er in het bijzonder voor dat de hierboven opgesomde vragen aan
 bod komen.
 * Hou de ruwe data van de metingen bij in een vorm die kan gebruikt worden voor latere analyse.

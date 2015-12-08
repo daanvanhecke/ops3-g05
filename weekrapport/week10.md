@@ -44,7 +44,7 @@
 * Samen met Frederik Ansible role Monit schrijven stap voor stap.
 * Voorbereiden test Powershell
 
-![Week 10)(http://puu.sh/lD96I/c39f31a303.png)
+![Week 10](http://puu.sh/lD96I/c39f31a303.png)
 
 ## Wat plan je volgende week te doen?
 
