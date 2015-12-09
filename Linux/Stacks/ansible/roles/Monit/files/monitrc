@@ -136,9 +136,9 @@ set daemon 120
 ## connection to a port and an application level network check is performed.
 #
 	check host lamp with address 192.168.56.77/wordpress
-    if failed url 192.168.56.77
-	timeout 10 seconds for 1 cycles then alert
-	then alert
+    #if failed url 192.168.56.77
+	#timeout 10 seconds for 1 cycles then alert
+	#then alert
 	
 #	if failed port 3306 protocol mysql with timeout 15 seconds then alert
 #  if failed port 80 protocol http

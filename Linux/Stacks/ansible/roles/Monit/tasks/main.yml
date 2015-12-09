@@ -12,7 +12,7 @@
     - service monit start
     - monit
 
-- name: copy monitrc for dashboard
+- name: copy monitrc to dashboard
   copy:
     src: monitrc
     dest: /etc/
