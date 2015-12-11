@@ -8,7 +8,10 @@
   copy:
     src: monitrc
     dest: /etc/
-
+- name: Make mariadb file
+  copy: 
+    src: mariadbmonitor
+    dest: /etc/monit.d/
 - name: Configure and complete the installation process
   command: sudo {{ item }} 
   with_items:
